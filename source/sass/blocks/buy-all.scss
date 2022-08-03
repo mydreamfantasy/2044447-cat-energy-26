@@ -1,0 +1,37 @@
+.add-goods__wrapper-buy-all {
+  margin: 35px 0 0;
+}
+
+.buy-all {
+  position: relative;
+}
+
+.buy-all::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 290px;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("/source/img/poster/back-cat.png");
+  background-repeat: no-repeat;
+  background-position: 50% -9px;
+  z-index: -1;
+}
+
+.buy-all__image {
+  padding: 59px 101px 48px;
+  display: block;
+
+}
+
+.buy-all__text {
+  margin: 0;
+  padding: 0 58px 43px 61px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: $white-color;
+  box-sizing: border-box;
+}

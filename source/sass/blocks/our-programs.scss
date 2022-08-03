@@ -1,0 +1,43 @@
+.our-programs {
+
+}
+
+.our-programs__wrapper {
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.our-programs__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-left: 91px;
+  padding-bottom: 29px;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black-color;
+}
+
+.our-programs__text {
+  margin: 0;
+  padding: 0 20px 38px 33px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.our-programs__link {
+  padding-left: 20px;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $black-color;
+  text-transform: uppercase;
+  text-decoration: none;
+}
