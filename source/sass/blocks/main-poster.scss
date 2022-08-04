@@ -1,21 +1,25 @@
 .main-poster {
   position: relative;
-}
+    &::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 302px;
+      background-image: url("../img/poster/back-cat.png");
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
 
-.main-poster::before {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 302px;
-  background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("/source/img/poster/back-cat.png");
-  background-repeat: no-repeat;
-  background-position: 50% -9px;
-  z-index: -1;
-}
-
-.main-poster {
-
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 320px;
+      height: 302px;
+      background-color: rgba(104, 183, 56, 0.85);
+      z-index: -1;
+    }
 }
 
 .main-poster__title {

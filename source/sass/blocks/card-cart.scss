@@ -3,7 +3,6 @@
 }
 
 .card-cart__image {
-  margin: 0;
   padding: 4px 125px 23px;
   display: block;
   padding-bottom: 13px;
@@ -62,12 +61,4 @@
   font-weight: 400;
   color: $grey-text;
   box-sizing: border-box;
-}
-
-.button--loadmore {
-  background-color: #f2f2f2;
-}
-
-.button__text--loadmore {
-  color: $grey-text;
 }

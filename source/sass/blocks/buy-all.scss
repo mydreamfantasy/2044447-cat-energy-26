@@ -1,21 +1,29 @@
-.add-goods__wrapper-buy-all {
-  margin: 35px 0 0;
-}
-
 .buy-all {
   position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 290px;
+      background-image: url("../img/catalog/cat-buy-all.png");
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 290px;
+      background-color: rgba(104, 183, 56, 0.85);
+      z-index: -1;
+    }
 }
 
 .buy-all::before {
-  content: "";
-  position: absolute;
-  width: 280px;
-  height: 290px;
-  background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("/source/img/poster/back-cat.png");
-  background-repeat: no-repeat;
-  background-position: 50% -9px;
-  z-index: -1;
+
 }
 
 .buy-all__image {
