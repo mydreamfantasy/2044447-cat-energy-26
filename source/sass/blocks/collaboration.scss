@@ -1,0 +1,40 @@
+.collaboration {
+  padding: 26px 0;
+}
+
+.collaboration__title {
+  margin: 0;
+  padding: 0;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.collaboration__address {
+
+}
+
+.collaboration__address-street {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $grey-text;
+}
+
+.collaboration__address-city {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $grey-text;
+}

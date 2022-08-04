@@ -1,0 +1,73 @@
+.main-poster {
+  position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 302px;
+      background-image: url("../img/poster/back-cat.png");
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 320px;
+      height: 302px;
+      background-color: rgba(104, 183, 56, 0.85);
+      z-index: -1;
+    }
+}
+
+.main-poster__title {
+  margin: 0;
+  padding: 27px 0 29px;
+  font-family: Oswald, Arial, sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $white-color;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.main-poster__text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 29px;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $white-color;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.image-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.main-poster__image {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3px;
+  text-align: center;
+  display: block;
+}
+
+.main-poster__link {
+  display: block;
+  width: 280px;
+  padding: 7px;
+  text-decoration: none;
+  text-align: center;
+  background-color: $green-btn;
+  box-sizing: border-box;
+}

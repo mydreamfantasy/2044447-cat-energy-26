@@ -1,0 +1,31 @@
+.button {
+  display: block;
+  width: 280px;
+  padding: 7px;
+  text-decoration: none;
+  text-align: center;
+  background-color: $green-btn;
+  box-sizing: border-box;
+}
+
+.button__text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 29px;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $white-color;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.button--loadmore {
+  background-color: #f2f2f2;
+}
+
+.button__text--loadmore {
+  color: $grey-text;
+}

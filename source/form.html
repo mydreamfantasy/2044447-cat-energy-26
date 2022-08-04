@@ -3,17 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>Форма заказа</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="page-body">
-  <header class="main-header">
+  <header class="main-header page-body__header-wrapper container">
     <div class="main-logo">
-      <a class="main-logo__icon" href="#">
-        <img class="main-logo__icon-image" src="#" alt="Логотип компании Кэт энерджи.">
+      <a class="main-logo__icon" href="index.html">
+        <img class="main-logo__icon-image" src="img/header/logo.svg" alt="Логотип компании Кэт энерджи." width="34"
+          height="38">
       </a>
-      <a class="main-logo__title" href="#">
-        <img class="main-logo__title-image" src="#" alt="Надпись Cat energy">
+      <a class="main-logo__title" href="index.html">
+        <img class="main-logo__title-image" src="img/header/logo-text.svg" alt="Надпись Cat energy." width="101"
+          height="18">
       </a>
     </div>
     <nav class="main-navigation">
@@ -32,7 +35,7 @@
   </header>
 
 
-  <main class="form container">
+  <main class="form container-content">
     <h1 class="form__title">Подбор программы</h1>
     <p class="form__text">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
@@ -63,7 +66,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__check  radio-button">
+      <fieldset class="form__check  radio-button form__form-field ">
         <legend class="visually-hidden">Выбор программы</legend>
         <ul class="radio-button__list">
           <li class="radio-button__item">
@@ -102,19 +105,20 @@
         <div class="form-email-phone__item">
           <label class="form-email-phone__label" for="form-phone">Телефон:<sup>*</sup></label>
           <div class="form-email-phone__wrapper">
-            <input class="form-email-phone__field-text form-email-phone__field-text--phone" type="text" id="form-phone"
+            <input class="form-email-phone__field-text form-email-phone__field-text--phone" type="tel" id="form-phone"
               name="form-phone" placeholder="8 (960) 900-60-90" required />
           </div>
         </div>
       </fieldset>
       <fieldset class="form__form-field form-comment">
-        <legend class="form-comment__title">Комментарий</legend> <textarea class="form-comment__text" rows="10"
-          cols="45" name="comment" placeholder="Расскажите обо всех повадках кота">
+        <legend class="form-comment__title">Комментарий</legend>
+        <textarea class="form-comment__text" rows="10" cols="14" name="comment"
+          placeholder="Расскажите обо всех повадках кота">
       </textarea>
       </fieldset>
 
 
-      <fieldset class="form__check  checkbox">
+      <fieldset class="form__check  checkbox form__form-field ">
         <legend class="checkbox__title">Дополнительно</legend>
         <ul class="checkbox__list">
           <li class="checkbox__item">
@@ -158,13 +162,13 @@
     </form>
   </main>
 
-  <footer class="main-footer">
-    <section class="collaboration container">
+  <footer class="main-footer ">
+    <section class="collaboration container-content">
       <h2 class="collaboration__title">Приглашаем
         к сотрудничеству
         дилеров!
       </h2>
-      <address class="collaboration__address">
+      <address class="collaboration__address container">
         <p class="collaboration__address-street">ул. Большая
           Конюшенная, д. 19/8</p>
         <p class="collaboration__address-city">Санкт-Петербург</p>
@@ -172,18 +176,19 @@
     </section>
     <section class="map container">
       <h2 class="visually-hidden">Где мы находимся</h2>
-      <img class="map__image" src="#" alt="ул. Большая
-      Конюшенная, д. 19/8, Санкт-Петербург">
+      <img class="map__image" src="img/map.jpeg" alt="ул. Большая
+      Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="362">
     </section>
-    <div class="main-footer__wrapper">
-      <div class="main-footer__logo">
-        <a class="main-footer__logo" href="#">
-          <img class="main-footer__icon" src="#" alt="Надпись Cat energy">
+    <div class="main-footer__wrapper container">
+      <div class="main-footer__logo container-content">
+        <a class="main-footer__link" href="#">
+          <img class="main-footer__icon" src="img/header/logo-text.svg" alt="Надпись Cat energy" width="128"
+            height="24">
         </a>
       </div>
-      <div class="main-footer__social social">
-        <b class="social__title">Давайте дружить!</b>
-        <ul class="social__list">
+      <div class="main-footer__social social container-content">
+        <b class="visually-hidden">Давайте дружить!</b>
+        <ul class="social__list ">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
@@ -200,7 +205,7 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
+      <div class="main-footer__copyright copyright container-content">
         <b class="copyright__text">HTML Academy</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
             Academy</span></a>

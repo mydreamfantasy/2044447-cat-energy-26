@@ -1,0 +1,45 @@
+.buy-all {
+  position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 290px;
+      background-image: url("../img/catalog/cat-buy-all.png");
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 290px;
+      background-color: rgba(104, 183, 56, 0.85);
+      z-index: -1;
+    }
+}
+
+.buy-all::before {
+
+}
+
+.buy-all__image {
+  padding: 59px 101px 48px;
+  display: block;
+
+}
+
+.buy-all__text {
+  margin: 0;
+  padding: 0 58px 43px 61px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: $white-color;
+  box-sizing: border-box;
+}

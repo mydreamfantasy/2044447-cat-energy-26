@@ -3,17 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>Каталог</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="page-body">
-  <header class="main-header">
+  <header class="main-header page-body__header-wrapper container">
     <div class="main-logo">
-      <a class="main-logo__icon" href="#">
-        <img class="main-logo__icon-image" src="#" alt="Логотип компании Кэт энерджи.">
+      <a class="main-logo__icon" href="index.html">
+        <img class="main-logo__icon-image" src="img/header/logo.svg" alt="Логотип компании Кэт энерджи." width="34"
+          height="38">
       </a>
-      <a class="main-logo__title" href="#">
-        <img class="main-logo__title-image" src="#" alt="Надпись Cat energy">
+      <a class="main-logo__title" href="index.html">
+        <img class="main-logo__title-image" src="img/header/logo-text.svg" alt="Надпись Cat energy." width="101"
+          height="18">
       </a>
     </div>
     <nav class="main-navigation">
@@ -30,13 +33,13 @@
     </div>
   </header>
 
-  <main class="catalog container">
+  <main class="catalog container-content">
     <h1 class="catalog__title">Каталог продукции</h1>
     <div class="catalog__list-wrapper">
       <ul class="catalog__list">
         <li class="catalog__item card-cart">
           <img class="card-cart__image" src="img/catalog/energy-slim-chic-small.png"
-            alt="Продукт со вкусом курица маленький" height="" width="">
+            alt="Продукт со вкусом курица маленький" height="140" width="112">
           <h2 class="card-cart__title">Cat Energy
             PRO
             500 г</h2>
@@ -72,7 +75,7 @@
         </li>
         <li class="catalog__item card-cart">
           <img class="card-cart__image" src="img/catalog/energy-slim-chic-big.png"
-            alt="Продукт со вкусом курица большой" height="" width="">
+            alt="Продукт со вкусом курица большой" height="140" width="112">
           <h2 class="card-cart__title">Cat Energy
             PRO
             1000 г</h2>
@@ -108,7 +111,7 @@
         </li>
         <li class="catalog__item card-cart">
           <img class="card-cart__image" src="img/catalog/energy-slim-fish-small.png"
-            alt="Продукт со вкусом рыба маленький" height="" width="">
+            alt="Продукт со вкусом рыба маленький" height="140" width="112">
           <h2 class="card-cart__title">Cat Energy
             PRO
             500 г</h2>
@@ -144,7 +147,7 @@
         </li>
         <li class="catalog__item card-cart">
           <img class="card-cart__image" src="img/catalog/energy-slim-fish-big.png" alt="Продукт со вкусом рыба большой"
-            height="" width="">
+            height="140" width="112">
           <h2 class="card-cart__title">Cat Energy
             PRO
             1000 г</h2>
@@ -180,7 +183,7 @@
         </li>
         <li class="catalog__item card-cart">
           <img class="card-cart__image" src="img/catalog/energy-slim-buck-small.png"
-            alt="Продукт со вкусом гречка маленький" height="" width="">
+            alt="Продукт со вкусом гречка маленький" height="140" width="112">
           <h2 class="card-cart__title">Cat Energy
             Slim
             500 г</h2>
@@ -216,7 +219,7 @@
         </li>
         <li class="catalog__item card-cart">
           <img class="card-cart__image" src="img/catalog/energy-slim-buck-big.png"
-            alt="Продукт со вкусом гречка большой" height="" width="">
+            alt="Продукт со вкусом гречка большой" height="140" width="112">
           <h2 class="card-cart__title">Cat Energy
             Slim
             1000 г</h2>
@@ -251,8 +254,8 @@
             <span class="button__text">Заказать</span></a>
         </li>
         <li class="catalog__item card-cart">
-          <img class="card-cart__image" src="img/catalog/energy-slim-rice.png" alt="Продукт со вкусом рис" height=""
-            width="">
+          <img class="card-cart__image" src="img/catalog/energy-slim-rice.png" alt="Продукт со вкусом рис" height="140"
+            width="112">
           <h2 class="card-cart__title">Cat Energy
             Slim
             500 г</h2>
@@ -287,8 +290,9 @@
             <span class="button__text">Заказать</span></a>
         </li>
         <li class="catalog__item card-cart card-cart--loadmore">
-          <img class="card-cart__image" src="img/catalog/load-more.svg" alt="" height="" width="">
-          <h2 class="card-cart__title">Показать еще 100500 товаров</h2>
+          <img class="card-cart__image" src="img/catalog/load-more.svg" alt="Еще больше товаров." height="30"
+            width="30">
+          <h2 class="card-cart__title card-cart__title--loadmore">Показать еще 100500 товаров</h2>
           <p class="card-cart__text">На самом деле вкусов
             гораздо больше!</p>
           <a class="card-cart__link button button--loadmore" href="#">
@@ -297,7 +301,7 @@
       </ul>
     </div>
 
-    <section class="add-goods container">
+    <section class="add-goods container-content">
       <h2 class="add-goods__title">Дополнительные товары</h2>
       <ul class="add-goods__list">
         <li class="add-goods__item">
@@ -345,23 +349,26 @@
           </div>
         </li>
       </ul>
-      <div class="buy-all container">
-        <img class="buy-all__image" src="img/catalog/buy-all.svg" alt="" height="" width="">
-        <p class="buy-all__text">Закажите все
-          и получите чехол для
-          кота в подарок!</p>
+      <div class="add-goods__wrapper-buy-all">
+        <div class="buy-all">
+          <img class="buy-all__image" src="img/catalog/buy-all.svg" alt="" height="" width="">
+          <p class="buy-all__text">Закажите все
+            и получите чехол для
+            кота в подарок!</p>
+        </div>
       </div>
+
     </section>
   </main>
 
 
-  <footer class="main-footer">
-    <section class="collaboration container">
+  <footer class="main-footer ">
+    <section class="collaboration container-content">
       <h2 class="collaboration__title">Приглашаем
         к сотрудничеству
         дилеров!
       </h2>
-      <address class="collaboration__address">
+      <address class="collaboration__address container">
         <p class="collaboration__address-street">ул. Большая
           Конюшенная, д. 19/8</p>
         <p class="collaboration__address-city">Санкт-Петербург</p>
@@ -369,18 +376,19 @@
     </section>
     <section class="map container">
       <h2 class="visually-hidden">Где мы находимся</h2>
-      <img class="map__image" src="#" alt="ул. Большая
-      Конюшенная, д. 19/8, Санкт-Петербург">
+      <img class="map__image" src="img/map.jpeg" alt="ул. Большая
+      Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="362">
     </section>
-    <div class="main-footer__wrapper">
-      <div class="main-footer__logo">
-        <a class="main-footer__logo" href="#">
-          <img class="main-footer__icon" src="#" alt="Надпись Cat energy">
+    <div class="main-footer__wrapper container">
+      <div class="main-footer__logo container-content">
+        <a class="main-footer__link" href="#">
+          <img class="main-footer__icon" src="img/header/logo-text.svg" alt="Надпись Cat energy" width="128"
+            height="24">
         </a>
       </div>
-      <div class="main-footer__social social">
-        <b class="social__title">Давайте дружить!</b>
-        <ul class="social__list">
+      <div class="main-footer__social social container-content">
+        <b class="visually-hidden">Давайте дружить!</b>
+        <ul class="social__list ">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
@@ -397,13 +405,14 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
+      <div class="main-footer__copyright copyright container-content">
         <b class="copyright__text">HTML Academy</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
             Academy</span></a>
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>

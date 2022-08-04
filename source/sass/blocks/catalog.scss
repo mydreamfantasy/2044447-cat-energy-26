@@ -1,0 +1,30 @@
+.catalog {
+}
+
+.catalog__title {
+  margin: 0;
+  padding: 27px 0 41px;
+  font-family: Oswald, Arial, sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $black-color;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.catalog__list-wrapper {
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog__item {
+  margin: 0;
+  padding: 0;
+  padding: 19px 0 25px;
+}
