@@ -1,13 +1,23 @@
 .our-programs {
-
+  @media (min-width: $large-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .our-programs__wrapper {
+
   background-color: #f2f2f2;
   margin-bottom: 20px;
+
+  @media (min-width: $medium-width) {
+    padding-left: 52px;
+  }
+
 }
 
 .our-programs__title {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-top: 30px;
@@ -19,6 +29,70 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $black-color;
+
+  @media (min-width: $medium-width) {
+    padding-top: 77px;
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-left: 162px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 53px;
+    top: 23px;
+    left: 29px;
+    background: no-repeat 0 0 url("../img/our-programs/cat-slim.svg");
+
+    @media (min-width: $medium-width) {
+      width: 200px;
+      height: 211px;
+      top: 61px;
+      left: 423px;
+      background-size: cover;
+    }
+
+    @media (min-width: $large-width) {
+      width: 100px;
+      height: 106px;
+      top: 20px;
+      left: 5px;
+    }
+  }
+}
+
+.our-programs__title-pro {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 50px;
+    top: 23px;
+    left: 17px;
+    background: no-repeat 0 0 url("../img/our-programs/cat-pro.svg");
+
+    @media (min-width: $medium-width) {
+      width: 268px;
+      height: 200px;
+      top: 61px;
+      left: 362px;
+      background-size: cover;
+    }
+
+    @media (min-width: $large-width) {
+      width: 134px;
+      height: 100px;
+      top: 20px;
+      left: 0;
+    }
+  }
 }
 
 .our-programs__text {
@@ -29,9 +103,22 @@
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+
+  @media (min-width: $medium-width) {
+    padding-left: 0;
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black-color;
+  }
+
+  @media (min-width: $large-width) {
+    width: 467px;
+  }
 }
 
 .our-programs__link {
+  position: relative;
   padding-left: 20px;
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
@@ -40,4 +127,25 @@
   color: $black-color;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $medium-width) {
+    padding-bottom: 53px;
+    padding-left: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    top: 7px;
+    left: 125px;
+    background: no-repeat 0 0 url("../img/our-programs/arrow.svg");
+  }
+
+
+
 }

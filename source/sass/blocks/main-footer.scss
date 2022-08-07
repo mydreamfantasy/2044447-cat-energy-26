@@ -4,7 +4,14 @@
 
 .main-footer__wrapper {
   background-color: #f2f2f2;
+}
 
+.main-footer__wrapper-content {
+
+  @media (min-width: $medium-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__link {
@@ -19,4 +26,7 @@
 
 .main-footer__copyright {
 
+}
+
+.main-footer__social {
 }

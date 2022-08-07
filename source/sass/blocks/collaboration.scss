@@ -1,5 +1,12 @@
 .collaboration {
+  display: flex;
+  justify-content: space-between;
   padding: 26px 0;
+
+  @media (min-width: $medium-width) {
+    width: 585px;
+    margin-left: 110px;
+  }
 }
 
 .collaboration__title {
@@ -14,7 +21,8 @@
 }
 
 .collaboration__address {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .collaboration__address-street {

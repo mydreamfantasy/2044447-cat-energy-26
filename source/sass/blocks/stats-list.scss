@@ -1,4 +1,8 @@
 .stats-list {
+
+  @media (min-width: $medium-width) {
+    display: flex;
+  }
 }
 
 .stats-list__item {

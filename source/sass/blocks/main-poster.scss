@@ -1,6 +1,16 @@
 .main-poster {
   position: relative;
-    &::before {
+
+  @media (min-width: $medium-width) {
+    padding-bottom: 524px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-bottom: 267px;
+  }
+
+
+    &:before {
       content: "";
       position: absolute;
       width: 320px;
@@ -8,9 +18,24 @@
       background-image: url("../img/poster/back-cat.png");
       background-repeat: no-repeat;
       z-index: -2;
+
+      @media (min-width: $medium-width) {
+        display: none;
+      }
+
+      @media (min-width: $large-width) {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 720px;
+        min-height: 694px;
+        background-image: url("../img/poster/back-cat-desktop.png");
+        z-index: -2;
+      }
     }
 
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       top: 0;
@@ -19,6 +44,21 @@
       height: 302px;
       background-color: rgba(104, 183, 56, 0.85);
       z-index: -1;
+
+      @media (min-width: $medium-width) {
+        display: none;
+      }
+
+      @media (min-width: $large-width) {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 720px;
+        min-height: 694px;
+        background-color: rgba(104, 183, 56, 0.85);
+        z-index: -1;
+      }
     }
 }
 
@@ -32,7 +72,22 @@
   font-weight: 400;
   color: $white-color;
   text-align: center;
-  box-sizing: border-box;
+
+  @media (min-width: $medium-width) {
+    width: 450px;
+    padding: 0 207px 41px 89px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: $black-color;
+    text-align: start;
+  }
+
+  @media (min-width: $large-width) {
+    padding-left: 190px;
+
+  }
+
 }
 
 .main-poster__text {
@@ -47,6 +102,18 @@
   text-align: center;
   text-transform: uppercase;
   box-sizing: border-box;
+
+  @media (min-width: $medium-width) {
+    padding: 0 207px 49px 89px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $black-color;
+    text-align: start;
+  }
+  @media (min-width: $large-width) {
+    padding-left: 190px;
+
+  }
 }
 
 .image-wrapper {
@@ -60,14 +127,41 @@
   padding-bottom: 3px;
   text-align: center;
   display: block;
+
+  @media (min-width: $medium-width) {
+    position: absolute;
+    top: 200px;
+    left: 230px;
+    z-index: -2;
+  }
+
+  @media (min-width: $large-width) {
+
+    top: 200px;
+    left: 590px;
+  }
+
+}
+
+.main-poster__button-wrapper {
+    margin: 0 auto;
 }
 
 .main-poster__link {
   display: block;
+  margin: 0 auto;
   width: 280px;
   padding: 7px;
   text-decoration: none;
   text-align: center;
   background-color: $green-btn;
   box-sizing: border-box;
+
+  @media (min-width: $medium-width) {
+    margin-left: 91px;;
+  }
+
+  @media (min-width: $large-width) {
+    margin-left: 190px;
+  }
 }

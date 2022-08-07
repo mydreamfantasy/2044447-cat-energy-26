@@ -1,5 +1,14 @@
 .add-goods {
   padding: 25px 0 19px;
+
+
+}
+
+.add-goods__wrapper {
+
+  @media (min-width: $large-width) {
+    display: flex;
+  }
 }
 
 .add-goods__title {
@@ -19,6 +28,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
 }
 
 .add-goods__item {
@@ -28,6 +38,23 @@
 }
 
 .add-goods__inner-wrapper {
+
+  @media (min-width: $medium-width) {
+   width: 632px;
+  }
+
+  @media (min-width: $large-width) {
+   display: flex;
+   width: 896px;
+
+  }
+}
+
+.add-goods__title-text-wrapper {
+  @media (min-width: $medium-width) {
+    display: flex;
+    justify-content: space-between;
+   }
 }
 
 .add-goods__inner-title {
@@ -59,6 +86,14 @@
 }
 
 .add-goods__link {
+  @media (min-width: $medium-width) {
+    width: 100%;
+   }
+
+   @media (min-width: $large-width) {
+    width: 244px;
+  }
+
 }
 
 .add-goods__wrapper-buy-all {

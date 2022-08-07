@@ -1,4 +1,11 @@
 .form {
+
+}
+
+.form__from-wrapper {
+  @media (min-width: $large-width) {
+    display: flex;
+  }
 }
 
 .form__title {

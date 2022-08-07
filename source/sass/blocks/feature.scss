@@ -1,4 +1,5 @@
 .features {
+  counter-reset: section;
 }
 
 .features__title {
@@ -16,12 +17,42 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $medium-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 153px 32px;
+  }
+
+  @media (min-width: $large-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 94px 0;
+  }
 }
 
 .features__item {
+  position: relative;
+  padding-bottom: 32px;
+
+  @media (min-width: $medium-width) {
+    &::after {
+     counter-increment: section;
+     content: counters(section,"1");
+     position: absolute;
+     font-size: 280px;
+     line-height: 280px;
+     color: #f2f2f2;
+     text-align: center;
+     margin: 5px 10px;
+     top: -64px;
+     left: 140px;
+     z-index: -1;
+    }
+   }
 }
 
 .features__text {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
@@ -31,4 +62,86 @@
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+
+  @media (min-width: $medium-width) {
+    width: 211px;
+    padding-top: 111px;
+    padding-left: 0;
+  }
+
+}
+
+.features__text-leaf {
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background: $green-btn no-repeat 50% 50% url("../img/features/leaf.svg");
+
+    @media (min-width: $medium-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+
+}
+
+.features__text-boil {
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background: $green-btn no-repeat 50% 50% url("../img/features/boil.svg");
+
+    @media (min-width: $medium-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+}
+
+.features__text-cutlery {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background: $green-btn no-repeat 50% 50% url("../img/features/cutlery.svg");
+
+    @media (min-width: $medium-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+}
+
+.features__text-alarm {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background: $green-btn no-repeat 50% 50% url("../img/features/alarm.svg");
+
+    @media (min-width: $medium-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
 }

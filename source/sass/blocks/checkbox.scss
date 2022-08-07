@@ -19,6 +19,15 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $medium-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $large-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .checkbox__item {
@@ -46,4 +55,10 @@
   color: $grey-text;
   text-transform: uppercase;
   box-sizing: border-box;
+}
+
+.checkbox__wrapper {
+  @media (min-width: $medium-width) {
+    display: flex;
+  }
 }
