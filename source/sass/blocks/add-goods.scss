@@ -1,11 +1,8 @@
 .add-goods {
   padding: 25px 0 19px;
-
-
 }
 
 .add-goods__wrapper {
-
   @media (min-width: $large-width) {
     display: flex;
   }
@@ -15,7 +12,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 36px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 24px;
   line-height: 24px;
@@ -25,28 +22,21 @@
 }
 
 .add-goods__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
+  // sometext
 }
 
 .add-goods__item {
-  margin: 0;
-  padding: 0;
   padding-bottom: 32px;
 }
 
 .add-goods__inner-wrapper {
-
   @media (min-width: $medium-width) {
-   width: 632px;
+    width: 632px;
   }
 
   @media (min-width: $large-width) {
-   display: flex;
-   width: 896px;
-
+    display: flex;
+    width: 896px;
   }
 }
 
@@ -54,14 +44,14 @@
   @media (min-width: $medium-width) {
     display: flex;
     justify-content: space-between;
-   }
+  }
 }
 
 .add-goods__inner-title {
   margin: 0;
   padding: 0;
   padding-bottom: 10px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 16px;
@@ -71,13 +61,14 @@
 }
 
 .add-goods__text-wrapper {
+  // sometext
 }
 
 .add-goods__text {
   margin: 0;
   padding: 0;
   padding-bottom: 12px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -87,13 +78,14 @@
 
 .add-goods__link {
   @media (min-width: $medium-width) {
-    width: 100%;
-   }
 
-   @media (min-width: $large-width) {
-    width: 244px;
+    width: 100%;
   }
 
+  @media (min-width: $large-width) {
+
+    width: 244px;
+  }
 }
 
 .add-goods__wrapper-buy-all {
