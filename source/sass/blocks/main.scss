@@ -1,3 +1,12 @@
 .main__wrapper {
   margin-bottom: 20px;
+
+  @media (min-width: $medium-width) {
+    min-width: $medium-width - 60px;
+  }
+
+  @media (min-width: $large-width) {
+    min-width: $large-width - 220px;
+    margin: 0 auto;
+  }
 }

@@ -2,27 +2,59 @@
   padding-bottom: 40px;
 }
 
+.example__content-wrapper {
+  @media (min-width: $large-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__stats-wrapper {
+  // sometext
+}
+
+.example__slider-wrapper {
+  // sometext
+}
+
 .example__title {
   margin: 0;
   padding: 0;
   padding-top: 25px;
   padding-bottom: 40px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   color: $black-color;
+
+  @media (min-width: $medium-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__text {
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $grey-text;
+
+  @media (min-width: $medium-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $medium-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__stats {
@@ -33,7 +65,7 @@
 .example__text-cost {
   margin: 0;
   padding: 0;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -43,39 +75,52 @@
 }
 
 .example__slider {
+  // sometext
 }
 
 .example__cats-image {
+  // sometext
 }
 
-.example__cats-fat {
+.example__cat-fat {
   margin: 0;
   padding: 0;
   display: block;
   padding-bottom: 15px;
+
+  @media (min-width: $medium-width) {
+    margin: 0 auto;
+  }
 }
 
 .example__cats-image--fat {
+  // sometext
 }
 
 .example__cats-image--slim {
+  // sometext
 }
 
 .example__range {
+  @media (min-width: $medium-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .example__range-scale {
+  // sometext
 }
 
 .example__range-bar {
-
+  // sometext
 }
 
 .example__range-text {
   margin: 0;
   padding: 0;
   padding-bottom: 8px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -84,4 +129,5 @@
 }
 
 .example__range-toggle {
+  // sometext
 }

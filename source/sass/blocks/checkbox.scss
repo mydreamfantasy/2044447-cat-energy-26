@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 35px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -19,6 +19,15 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $medium-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $large-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .checkbox__item {
@@ -28,22 +37,31 @@
 }
 
 .checkbox__control {
+  // sometext
 }
 
 .checkbox__control-input {
+  // sometext
 }
 
 .checkbox__control-mark {
+  // sometext
 }
 
 .checkbox__control-add {
   margin: 0;
   padding: 0;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $grey-text;
   text-transform: uppercase;
   box-sizing: border-box;
+}
+
+.checkbox__wrapper {
+  @media (min-width: $medium-width) {
+    display: flex;
+  }
 }

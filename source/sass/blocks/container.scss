@@ -1,12 +1,29 @@
 .container {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
+
+  @media (min-width: $medium-width) {
+    width: $medium-width;
+  }
+
+  @media (min-width: $large-width) {
+    width: $large-width;
+  }
 }
 
 .container-content {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $medium-width) {
+    width: $medium-width - 60px;
+  }
+
+  @media (min-width: $large-width) {
+    width: $large-width - 220px;
+  }
 }
 
 .container--example {

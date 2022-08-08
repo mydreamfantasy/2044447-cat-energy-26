@@ -1,11 +1,13 @@
 .copyright {
   padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright__text {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -13,5 +15,5 @@
 }
 
 .copyright__link {
-
+  // sometext
 }
