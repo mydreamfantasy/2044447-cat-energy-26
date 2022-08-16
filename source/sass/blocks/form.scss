@@ -1,10 +1,19 @@
 .form {
-  // sometext
+  @media (min-width: $medium-width) {
+    width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $large-width) {
+    width: 1220px;
+  }
 }
 
 .form__from-wrapper {
   @media (min-width: $large-width) {
     display: flex;
+    gap: 78px;
   }
 }
 
@@ -14,11 +23,19 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   font-weight: 400;
+  letter-spacing: -0.03em;
   color: $black-color;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-width: $medium-width) {
+    padding-top: 0;
+    padding-bottom: 54px;
+    font-size: 60px;
+    text-align: start;
+  }
 }
 
 .form__text {
@@ -29,9 +46,22 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  letter-spacing: -0.02em;
   color: $black-color;
   text-transform: uppercase;
   box-sizing: border-box;
+
+  @media (min-width: $medium-width) {
+    padding-right: 237px;
+    padding-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $large-width) {
+    box-sizing: content-box;
+    width: 325px;
+  }
 }
 
 .form__form {
@@ -46,30 +76,74 @@
 
 .form-field {
   padding-bottom: 27px;
+
+  @media (min-width: $medium-width) {
+    padding-bottom: 71px;
+  }
+
+  @media (min-width: $large-width) {
+    min-width: 569px;
+    padding-bottom: 0;
+  }
 }
 
 .form-field__item {
-  // sometext
+  display: flex;
+  gap: 19px;
 }
 
 .form-field__label {
   margin: 0;
   padding: 0;
+  padding-top: 10px;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 18px;
   font-weight: 400;
   color: $grey-text;
   text-transform: uppercase;
+  white-space: nowrap;
   box-sizing: border-box;
+
+  @media (min-width: $medium-width) {
+    padding-top: 5px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-field__wrapper {
   padding-bottom: 13px;
+  flex-grow: 1;
+
+  @media (min-width: $medium-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .form-field__field-text {
-  // sometext
+  position: relative;
+  height: 46px;
+  width: 100%;
+  padding-left: 11px;
+  border: 1px solid #e7e7e7;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  box-sizing: border-box;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
+  @media (min-width: $medium-width) {
+    height: 53px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-field__field-text--name {
@@ -88,21 +162,20 @@
   // sometext
 }
 
-.radio-button__control-program {
-  margin: 0;
-  padding: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #222222;
-  text-transform: uppercase;
-  box-sizing: border-box;
-}
-
 .form__button {
   border: none;
   cursor: pointer;
+  padding: 7px 0;
+  width: 100%;
+
+  @media (min-width: $medium-width) {
+    width: 282px;
+    height: 52px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 568px;
+  }
 }
 
 .form__button-text {
@@ -111,7 +184,7 @@
 
 .form__remark {
   margin: 0;
-  padding: 21px 62px 4px;
+  padding: 18px 62px 32px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -119,4 +192,13 @@
   color: $black-color;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-width: $medium-width) {
+    padding: 15px 64px 92px;
+    font-size: 19px;
+  }
+
+  @media (min-width: $large-width) {
+    padding: 15px 83px 101px;
+  }
 }

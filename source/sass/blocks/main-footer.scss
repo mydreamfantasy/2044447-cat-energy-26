@@ -1,5 +1,7 @@
 .main-footer {
-  // sometext
+  @media (min-width: $large-width) {
+    position: relative;
+  }
 }
 
 .main-footer__wrapper {
@@ -17,6 +19,14 @@
   display: block;
   padding: 39px 56px 32px;
   text-align: center;
+
+  @media (min-width: $medium-width) {
+    padding: 64px 0 55px;
+  }
+
+  @media (min-width: $large-width) {
+    padding: 63px 0 55px;
+  }
 }
 
 .main-footer__icon {
@@ -29,4 +39,8 @@
 
 .main-footer__social {
   // sometext
+}
+
+.main-footer--inner-pages {
+  background-color: #f2f2f2;
 }

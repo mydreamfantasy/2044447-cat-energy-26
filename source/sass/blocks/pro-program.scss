@@ -1,3 +1,11 @@
 .pro-program {
   padding-bottom: 18px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 83px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 0;
+  }
 }

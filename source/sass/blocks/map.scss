@@ -1,9 +1,16 @@
 .map {
-  // sometext
+  iframe {
+    display: block;
+    width: 100%;
+
+    @media (min-width: $medium-width) {
+      height: 400px;
+    }
+  }
 }
 
 .map__image {
   margin: 0;
   padding: 0;
-  display: block;
+  display: none;
 }
