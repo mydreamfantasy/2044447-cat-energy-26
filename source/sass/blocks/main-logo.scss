@@ -1,5 +1,8 @@
 .main-logo {
-  margin-top: 10px;
+  display: flex;
+  position: relative;
+  margin-top: 11px;
+  padding-bottom: 11.5px;
 
   @media (min-width: $medium-width) {
     display: flex;
@@ -13,14 +16,18 @@
 }
 
 .main-logo__icon {
+  display: block;
   text-decoration: none;
 }
 
 .main-logo__icon-image {
-  padding-right: 56px;
+  padding-right: 55px;
 }
 
 .main-logo__title {
+  display: block;
+  padding-top: 12px;
+
   @media (min-width: $medium-width) {
     display: none;
   }

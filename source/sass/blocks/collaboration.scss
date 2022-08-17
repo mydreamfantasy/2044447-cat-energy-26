@@ -1,11 +1,23 @@
 .collaboration {
   display: flex;
-  justify-content: space-between;
+  gap: 13px;
   padding: 26px 0;
 
   @media (min-width: $medium-width) {
-    width: 585px;
-    margin-left: 110px;
+    justify-content: space-between;
+    width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0;
+  }
+
+  @media (min-width: $large-width) {
+    position: absolute;
+    width: 421px;
+    padding: 56px 66px 56px 80px;
+    bottom: 257px;
+    left: 109px;
+    background-color: $white-color;
   }
 }
 
@@ -18,11 +30,28 @@
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+  letter-spacing: -0.03em;
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 180px;
+  }
 }
 
 .collaboration__address {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $medium-width) {
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 170px;
+  }
+
+  @media (min-width: $large-width) {
+    align-items: flex-start;
+  }
 }
 
 .collaboration__address-street {
@@ -34,6 +63,17 @@
   line-height: 20px;
   font-weight: 400;
   color: $grey-text;
+
+  @media (min-width: $medium-width) {
+    margin-top: -3px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $large-width) {
+    text-align: start;
+  }
 }
 
 .collaboration__address-city {
@@ -45,4 +85,9 @@
   line-height: 20px;
   font-weight: 400;
   color: $grey-text;
+
+  @media (min-width: $medium-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

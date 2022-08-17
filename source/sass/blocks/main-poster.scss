@@ -2,7 +2,7 @@
   position: relative;
 
   @media (min-width: $medium-width) {
-    padding-bottom: 524px;
+    padding-bottom: 505px;
   }
 
   @media (min-width: $large-width) {
@@ -12,10 +12,11 @@
   &::before {
     content: "";
     position: absolute;
-    width: 320px;
+    width: 100%;
     height: 302px;
     background-image: url("../img/poster/back-cat.png");
     background-repeat: no-repeat;
+    background-size: cover;
     z-index: -2;
 
     @media (min-width: $medium-width) {
@@ -24,13 +25,14 @@
 
     @media (min-width: $large-width) {
       content: "";
+      display: block;
       position: absolute;
-      top: 0;
+      top: -185px;
       right: 0;
       width: 720px;
       min-height: 694px;
       background-image: url("../img/poster/back-cat-desktop.png");
-      z-index: -2;
+      z-index: -4;
     }
   }
 
@@ -39,7 +41,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 320px;
+    width: 100%;
     height: 302px;
     background-color: rgba(104, 183, 56, 0.85);
     z-index: -1;
@@ -50,39 +52,43 @@
 
     @media (min-width: $large-width) {
       content: "";
+      display: block;
       position: absolute;
-      top: 0;
+      top: -185px;
+      left: 50%;
       right: 0;
       width: 720px;
       min-height: 694px;
       background-color: rgba(104, 183, 56, 0.85);
-      z-index: -1;
+      z-index: -3;
     }
   }
 }
 
 .main-poster__title {
   margin: 0;
-  padding: 27px 0 29px;
+  padding: 27px 0 25px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   font-weight: 400;
   color: $white-color;
   text-align: center;
 
   @media (min-width: $medium-width) {
     width: 450px;
-    padding: 0 207px 41px 89px;
+    padding: 0 196px 41px 115px;
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
     color: $black-color;
+    letter-spacing: -0.03em;
     text-align: start;
   }
 
   @media (min-width: $large-width) {
+    padding-top: 36px;
     padding-left: 190px;
   }
 }
@@ -101,15 +107,20 @@
   box-sizing: border-box;
 
   @media (min-width: $medium-width) {
-    padding: 0 207px 49px 89px;
+    padding: 0 190px 49px 120px;
     font-size: 20px;
     line-height: 20px;
     color: $black-color;
+    letter-spacing: -0.03em;
     text-align: start;
   }
 
   @media (min-width: $large-width) {
     padding-left: 190px;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
   }
 }
 
@@ -147,13 +158,15 @@
   margin: 0 auto;
   width: 280px;
   padding: 7px;
+  padding-bottom: 5px;
   text-decoration: none;
   text-align: center;
   background-color: $green-btn;
   box-sizing: border-box;
 
   @media (min-width: $medium-width) {
-    margin-left: 91px;
+    margin-left: 120px;
+    padding: 10px;
   }
 
   @media (min-width: $large-width) {

@@ -1,17 +1,29 @@
 .button {
   display: block;
   width: 280px;
-  padding: 7px;
   text-decoration: none;
   text-align: center;
   background-color: $green-btn;
   box-sizing: border-box;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    background: #5eaa2f;
+  }
+
+  @media (min-width: $medium-width) {
+    width: 244px;
+  }
 }
 
 .button__text {
+  display: block;
   margin: 0;
-  padding: 0;
-  padding-bottom: 29px;
+  padding: 7px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -20,6 +32,12 @@
   text-align: center;
   text-transform: uppercase;
   box-sizing: border-box;
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+  }
 }
 
 .button--loadmore {
@@ -28,4 +46,9 @@
 
 .button__text--loadmore {
   color: $grey-text;
+
+  @media (min-width: $medium-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

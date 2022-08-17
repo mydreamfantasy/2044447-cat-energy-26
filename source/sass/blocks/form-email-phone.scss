@@ -1,12 +1,18 @@
 .form-email-phone {
-  padding-bottom: 24px;
+  padding-bottom: 9px;
+
+  @media (min-width: $medium-width) {
+    padding-bottom: 43px;
+  }
 
   @media (min-width: $large-width) {
     display: flex;
+    padding-bottom: 46px;
   }
 }
 
 .form-email-phone__title {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-bottom: 35px;
@@ -15,38 +21,190 @@
   line-height: 26px;
   font-weight: 400;
   color: $black-color;
-  text-transform: uppercase;
+  letter-spacing: -0.04em;
   box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: -20px;
+    width: 100px;
+    height: 2px;
+    background-color: $green-btn;
+  }
+
+  @media (min-width: $medium-width) {
+    padding-bottom: 76px;
+    font-size: 36px;
+    line-height: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: -193px;
+      width: 145px;
+      height: 3px;
+      background-color: $green-btn;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: -68px;
+      width: 31px;
+      height: 3px;
+      background-color: $green-btn;
+    }
+  }
+
+  @media (min-width: $large-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: -823px;
+      width: 776px;
+      height: 3px;
+      background-color: $green-btn;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: -110px;
+      width: 70px;
+      height: 3px;
+      background-color: $green-btn;
+    }
+  }
 }
 
 .form-email-phone__item {
+  display: flex;
+  gap: 12px;
   padding-bottom: 14px;
+
+  @media (min-width: $medium-width) {
+    padding: 0;
+  }
 }
 
 .form-email-phone__label {
   margin: 0;
   padding: 0;
+  padding-top: 10px;
+  padding-right: 3px;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 18px;
   font-weight: 400;
   color: $grey-text;
   text-transform: uppercase;
+  white-space: nowrap;
   box-sizing: border-box;
+
+  @media (min-width: $medium-width) {
+    padding-top: 5px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-email-phone__wrapper {
-  // sometext
+  position: relative;
+  flex-grow: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  @media (min-width: $medium-width) {
+    padding-bottom: 20px;
+  }
+}
+
+.form-email-phone__wrapper--email {
+  &::after {
+    top: 17px;
+    right: 14px;
+    width: 21px;
+    height: 16px;
+    background: url("../img/form/email.svg") no-repeat 0 0;
+  }
+}
+
+.form-email-phone__wrapper--phone {
+  &::after {
+    top: 12px;
+    right: 4px;
+    width: 29px;
+    height: 21px;
+    background: url("../img/form/phone.svg") no-repeat 0 0;
+  }
 }
 
 .form-email-phone__field-text {
-  // sometext
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 46px;
+  margin: 0;
+  padding-left: 11px;
+  border: 1px solid #e7e7e7;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  box-sizing: border-box;
+  text-transform: uppercase;
+
+  &::placeholder {
+    padding-right: 20px;
+    color: #444444;
+    opacity: 1;
+  }
+
+  @media (min-width: $medium-width) {
+    height: 53px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
+  }
 }
 
-.form-email-phone__field-text--email {
-  // sometext
+.form-email-phone__wrapper-item {
+  @media (min-width: $large-width) {
+    display: grid;
+    grid-template-columns: 569px 569px;
+    gap: 75px;
+  }
 }
 
-.form-email-phone__field-text--phone {
-  // sometext
-}
+// .form-email-phone__field-text--email {
+//   // width: 222px;
+// }
+
+// .form-email-phone__field-text--phone {
+//   // width: 200px;
+// }
+
+// .form-field__item {
+
+// }
+
+// .form-field__label {
+
+// }
+
+// .form-field__field-text {
+
+// }
+
+// .field-email-wrapper {
+
+// }

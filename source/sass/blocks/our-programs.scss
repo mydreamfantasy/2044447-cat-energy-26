@@ -2,16 +2,21 @@
   @media (min-width: $large-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 73px;
   }
 }
 
 .our-programs__wrapper {
-
   background-color: #f2f2f2;
   margin-bottom: 20px;
 
   @media (min-width: $medium-width) {
     padding-left: 52px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -32,11 +37,14 @@
   @media (min-width: $medium-width) {
     padding-top: 77px;
     padding-left: 0;
+    padding-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
+    letter-spacing: -0.02em;
   }
 
   @media (min-width: $large-width) {
+    padding-bottom: 74px;
     padding-left: 162px;
   }
 
@@ -45,23 +53,23 @@
     position: absolute;
     width: 50px;
     height: 53px;
-    top: 23px;
-    left: 29px;
+    top: 21px;
+    left: 22px;
     background: no-repeat 0 0 url("../img/our-programs/cat-slim.svg");
 
     @media (min-width: $medium-width) {
-      width: 200px;
-      height: 211px;
-      top: 61px;
-      left: 423px;
+      width: 201px;
+      height: 213px;
+      top: 79px;
+      left: 393px;
       background-size: cover;
     }
 
     @media (min-width: $large-width) {
       width: 100px;
       height: 106px;
-      top: 20px;
-      left: 5px;
+      top: 41px;
+      left: 0;
     }
   }
 }
@@ -75,29 +83,29 @@
     width: 67px;
     height: 50px;
     top: 23px;
-    left: 17px;
+    left: 13px;
     background: no-repeat 0 0 url("../img/our-programs/cat-pro.svg");
 
     @media (min-width: $medium-width) {
       width: 268px;
       height: 200px;
-      top: 61px;
-      left: 362px;
+      top: 91px;
+      left: 360px;
       background-size: cover;
     }
 
     @media (min-width: $large-width) {
       width: 134px;
       height: 100px;
-      top: 20px;
-      left: 0;
+      top: 46px;
+      left: -21px;
     }
   }
 }
 
 .our-programs__text {
   margin: 0;
-  padding: 0 20px 38px 33px;
+  padding: 1px 20px 38px 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -106,6 +114,7 @@
 
   @media (min-width: $medium-width) {
     padding-left: 0;
+    padding-bottom: 52px;
     width: 340px;
     font-size: 16px;
     line-height: 24px;
@@ -114,6 +123,8 @@
 
   @media (min-width: $large-width) {
     width: 467px;
+    padding-bottom: 27px;
+    padding-right: 50px;
   }
 }
 
@@ -141,8 +152,13 @@
     position: absolute;
     width: 24px;
     height: 12px;
-    top: 7px;
-    left: 125px;
+    top: 5px;
+    left: 121px;
     background: no-repeat 0 0 url("../img/our-programs/arrow.svg");
+
+    @media (min-width: $medium-width) {
+      top: 8px;
+      left: 132px;
+    }
   }
 }

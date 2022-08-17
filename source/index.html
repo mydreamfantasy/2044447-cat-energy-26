@@ -20,11 +20,11 @@
           height="18">
       </a>
     </div>
-    <nav class="main-navigation">
+    <nav class="main-navigation main-nav--closed main-nav--nojs">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-navigation__list reset-list">
-        <li class="main-navigation__item main-navigation__item--active reset-item"><a
-            class="main-navigation__link">Главная</a>
+        <li class="main-navigation__item reset-item"><a
+            class="main-navigation__link main-navigation__link--active">Главная</a>
         </li>
         <li class="main-navigation__item reset-item"><a class="main-navigation__link" href="catalog.html">Каталог
             продукции</a>
@@ -42,7 +42,7 @@
       <p class="main-poster__text">Занялся собой? Займись котом!</p>
       <div class="main-poster__image-wrapper image-wrapper"><img class="main-poster__image"
           src="img/poster/mobile-jar.png" alt="Банка с кормом." width="280" height="270"></div>
-      <div class="main-poster__button-wrapper"><a href="#" class="main-poster__link button">
+      <div class="main-poster__button-wrapper"><a href="form.html" class="main-poster__link button">
           <span class="main-poster__text button__text"> Подобрать программу</span>
         </a>
       </div>
@@ -116,35 +116,36 @@
           <div class="example__slider-wrapper">
             <div class="example__slider">
               <div class="example__cats-image example__cats-image--fat">
-                <img class="example__cat-fat" src="img/example/before-cat.png" alt="Изображение кота до похудения."
-                  width="280" height="232">
+                <!-- <img class="example__cat-fat" src="img/example/before-cat.png" alt="Изображение кота до похудения."
+                  width="280" height="232"> -->
               </div>
               <div class="example__cats-image example__cats-image--slim">
-                <img class="example__cat-fat" src="img/example/after-cat.png" alt="Изображение кота после похудения."
-                  width="280" height="232">
+                <!-- <img class="example__cat-fat" src="img/example/after-cat.png" alt="Изображение кота после похудения."
+                  width="280" height="232"> -->
               </div>
             </div>
             <div class="example__range">
-              <div class="example__range-scale">
+              <span class="example__range-separator"></span>
+              <!-- <div class="example__range-scale">
                 <div class="example__range-bar">
                   <span class="example__range-text">Было</span>
                   <button class="example__range-toggle">
                     <span class="visually-hidden">Изменить размер кота</span>
                   </button>
                   <span class="example__range-text">Стало</span>
-                </div>
-              </div>
+                </div> -->
             </div>
           </div>
         </div>
+    </div>
 
-      </section>
+    </section>
     </div>
   </main>
 
   <footer class="main-footer ">
     <section class="collaboration container-content">
-      <h2 class="collaboration__title">Приглашаем
+      <h2 class="collaboration__title">Приглашаем <br>
         к сотрудничеству
         дилеров!
       </h2>
@@ -156,6 +157,10 @@
     </section>
     <section class="map container">
       <h2 class="visually-hidden">Где мы находимся</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660319396633!5m2!1sru!2sru"
+        width="320" height="361" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
       <img class="map__image" src="img/map.jpeg" alt="ул. Большая
       Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="362">
     </section>
@@ -206,7 +211,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">HTML Academy</b>
+          <p class="copyright__text">HTML Academy</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="htmlacademy-logo" aria-hidden="true" focusable="false" role="img" aria-label="htmlacademy."
               width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -222,6 +227,8 @@
     </div>
   </footer>
 
+
+  <script src="js/app.js"></script>
 
 </body>
 

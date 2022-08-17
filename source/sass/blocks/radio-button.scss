@@ -1,11 +1,32 @@
 .radio-button {
-  padding: 22px 0 45px;
+  padding: 8px 0 82px;
+
+  @media (min-width: $large-width) {
+    padding-top: 32px;
+    padding-bottom: 76px;
+  }
 }
 
 .radio-button__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $medium-width) {
+    padding-left: 20px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      min-width: 630px;
+      min-height: 196px;
+      top: -30px;
+      left: 0;
+      border: 1px solid #e7e7e7;
+      z-index: -1;
+    }
+  }
 }
 
 .radio-button__item {
@@ -15,13 +36,73 @@
 }
 
 .radio-button__control {
-  // sometext
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  padding-top: 4px;
+  padding-bottom: 9px;
+
+  @media (min-width: $medium-width) {
+    padding-left: 70px;
+    padding-top: 0;
+    padding-bottom: 11px;
+  }
 }
 
 .radio-button__control-input {
-  // sometext
+  &[type="radio"] + .radio-button__control-mark {
+    border-radius: 50%;
+  }
+
+  &[type="radio"]:checked + .radio-button__control-mark::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 13.5px;
+    height: 13.5px;
+    background-color: $green-btn;
+    border-radius: 50%;
+
+    @media (min-width: $medium-width) {
+      top: 12px;
+      left: 12px;
+      width: 17.5px;
+      height: 17.5px;
+    }
+  }
 }
 
 .radio-button__control-mark {
-  // sometext
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  @media (min-width: $medium-width) {
+    top: -6px;
+    left: 9px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.radio-button__control-program {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+  box-sizing: border-box;
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
