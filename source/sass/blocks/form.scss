@@ -68,9 +68,13 @@
 }
 
 .form__form {
-  width: 89%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $medium-width) {
+    width: 89%;
+  }
 
   @media (min-width: $large-width) {
     width: 100%;
