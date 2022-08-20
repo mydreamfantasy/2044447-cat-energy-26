@@ -1,8 +1,8 @@
 .form-comment {
-  padding-bottom: 16px;
+  padding-bottom: 22px;
 
   @media (min-width: $medium-width) {
-    padding-bottom: 54px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $large-width) {
@@ -91,7 +91,8 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  white-space: nowrap;
+  // white-space: nowrap;
+  border-radius: none;
   box-sizing: border-box;
 
   &::placeholder {

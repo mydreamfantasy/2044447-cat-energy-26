@@ -19,6 +19,16 @@
   display: block;
   padding: 39px 56px 32px;
   text-align: center;
+  transition: all 0.3s ease 0s;
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $medium-width) {
     padding: 64px 0 55px;

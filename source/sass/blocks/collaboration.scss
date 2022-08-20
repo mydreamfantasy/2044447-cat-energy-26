@@ -3,6 +3,10 @@
   gap: 13px;
   padding: 26px 0;
 
+  @media (min-width: 372px) {
+    justify-content: space-between;
+  }
+
   @media (min-width: $medium-width) {
     justify-content: space-between;
     width: 630px;
@@ -56,6 +60,7 @@
 
 .collaboration__address-street {
   margin: 0;
+  margin-right: -13px;
   padding: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -66,6 +71,7 @@
 
   @media (min-width: $medium-width) {
     margin-top: -3px;
+    margin-right: 0;
     font-size: 16px;
     line-height: 20px;
     text-align: end;

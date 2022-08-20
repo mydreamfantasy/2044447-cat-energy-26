@@ -1,5 +1,9 @@
 .radio-button {
-  padding: 8px 0 82px;
+  padding: 8px 0 35px;
+
+  @media (min-width: $medium-width) {
+    padding-bottom: 81px;
+  }
 
   @media (min-width: $large-width) {
     padding-top: 32px;
@@ -8,10 +12,6 @@
 }
 
 .radio-button__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
   @media (min-width: $medium-width) {
     padding-left: 20px;
     position: relative;
@@ -32,20 +32,25 @@
 .radio-button__item {
   margin: 0;
   padding: 0;
-  padding-bottom: 12px;
+  padding-bottom: 6px;
 }
 
 .radio-button__control {
   position: relative;
   display: block;
   padding-left: 45px;
-  padding-top: 4px;
+  padding-top: 3px;
   padding-bottom: 9px;
+
+  &:disabled + .radio-button__control-mark,
+  &:disabled ~ .radio-button__control-program {
+    opacity: 0.3;
+  }
 
   @media (min-width: $medium-width) {
     padding-left: 70px;
     padding-top: 0;
-    padding-bottom: 11px;
+    padding-bottom: 17px;
   }
 }
 
@@ -90,6 +95,10 @@
   }
 }
 
+.radio-button__control-input:hover + .radio-button__control-mark {
+  border-color: #bababa;
+}
+
 .radio-button__control-program {
   margin: 0;
   padding: 0;
@@ -98,6 +107,7 @@
   line-height: 18px;
   font-weight: 400;
   color: #222222;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
   box-sizing: border-box;
 

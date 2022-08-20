@@ -1,7 +1,5 @@
 .copyright {
   padding: 15px 0;
-  display: flex;
-  justify-content: space-between;
 
   @media (min-width: $medium-width) {
     width: 165px;
@@ -14,6 +12,7 @@
 }
 
 .copyright__text {
+  display: block;
   margin: 0;
   padding: 0;
   padding-top: 7px;
@@ -25,5 +24,20 @@
 }
 
 .copyright__link {
-  // sometext
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+
+  &:hover .copyright__icon path {
+    fill: $green-btn;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .copyright__icon path {
+    fill: $green-btn;
+  }
 }

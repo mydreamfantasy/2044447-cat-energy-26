@@ -12,7 +12,7 @@
     &:not(:last-of-type)::after {
       content: "";
       position: absolute;
-      top: 96px;
+      top: 80px;
       left: -36px;
       width: 324px;
       height: 430px;
@@ -23,7 +23,7 @@
     &:last-of-type::after {
       content: "";
       position: absolute;
-      top: 96px;
+      top: 80px;
       left: -36px;
       width: 320px;
       height: 425px;
@@ -63,6 +63,18 @@
 }
 
 .card-cart__wrapper-img {
+  width: 140px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $medium-width) {
+    width: 168px;
+    height: 200px;
+    margin-bottom: 16px;
+  }
+
   @media (min-width: $large-width) {
     display: flex;
     margin-top: 14px;
@@ -73,16 +85,14 @@
 }
 
 .card-cart__image {
-  display: flex;
+  display: block;
   padding: 0;
-  min-height: 86px;
-  justify-self: center;
-  align-self: center;
+  object-fit: cover;
 
   @media (min-width: $medium-width) {
     min-height: 172px;
     min-width: 168px;
-    margin-left: 41px;
+    margin-left: 88px;
     margin-bottom: 30px;
   }
 
@@ -187,6 +197,7 @@
 
 .card-cart__link {
   padding: 6px 0;
+  width: auto;
   grid-column: 1/3;
 
   @media (min-width: $medium-width) {
@@ -210,6 +221,10 @@
   display: block;
 
   @media (min-width: $medium-width) {
+    padding-top: 127px;
+  }
+
+  @media (min-width: $large-width) {
     padding-top: 143px;
   }
 }

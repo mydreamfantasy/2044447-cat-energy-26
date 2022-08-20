@@ -110,6 +110,11 @@
   display: block;
   padding-left: 46px;
   font-size: 16px;
+
+  &:disabled + .checkbox__control-mark,
+  &:disabled ~ .checkbox__control-add {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__control-input {
@@ -147,6 +152,10 @@
   }
 }
 
+.checkbox__control-input:hover + .checkbox__control-mark {
+  border-color: #bababa;
+}
+
 .checkbox__control-add {
   margin: 0;
   padding: 0;
@@ -154,6 +163,7 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  letter-spacing: -0.02em;
   color: $grey-text;
   text-transform: uppercase;
   box-sizing: border-box;
