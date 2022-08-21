@@ -39,7 +39,7 @@
       background-image: url("../img/poster/back-cat-desktop.png");
       z-index: -4;
 
-      @media (min-resolution: 2dppx) {
+      @media (min-resolution: $retina-resolution) {
         background-image: url("../img/poster/back-cat-desktop@2x.png");
       }
     }

@@ -188,8 +188,21 @@
     background-color: $green-btn;
   }
 
+  &:hover ~ .example__range-button path {
+    fill: $green-btn;
+  }
+
+  &:hover ~ .example__range-button rect {
+    stroke: $green-btn;
+  }
+
   &:active ~ .example__range-line {
     background-color: #5eaa2f;
+  }
+
+  &:active ~ .example__range-button path {
+    background-color: #5eaa2f;
+    stroke: #5eaa2f;
   }
 }
 
@@ -212,18 +225,18 @@
   left: var(--position);
   transform: translate(-50%, -50%);
   pointer-events: none;
+
+  &:hover .slider-button-svg ~ path {
+    fill: $green-btn;
+  }
+
+  &:active .slider-button-svg ~ path {
+    fill: #5eaa2f;
+  }
 }
 
 .slider-button-svg {
   z-index: 40;
-
-  &:hover path {
-    fill: $green-btn;
-  }
-
-  &:active path {
-    fill: #5eaa2f;
-  }
 }
 
 .example__cats-image--slim {

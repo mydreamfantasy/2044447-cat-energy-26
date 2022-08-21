@@ -27,10 +27,21 @@
     content: "";
     position: absolute;
     top: 14px;
-    right: -161px;
-    width: 136px;
+    left: -6.5vw;
+    width: 100vw;
+    z-index: -1;
     height: 2px;
     background-color: $green-btn;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -20px;
+    width: 20px;
+    height: 5px;
+    background-color: $white-color;
   }
 
   @media (min-width: $medium-width) {
@@ -42,8 +53,9 @@
       content: "";
       position: absolute;
       top: 22px;
-      right: -491px;
-      width: 446px;
+      left: -9.5vw;
+      width: 100vw;
+      z-index: -1;
       height: 3px;
       background-color: $green-btn;
     }
@@ -51,11 +63,11 @@
     &::after {
       content: "";
       position: absolute;
-      top: 22px;
-      left: -68px;
-      width: 31px;
-      height: 3px;
-      background-color: $green-btn;
+      top: 21px;
+      left: -37px;
+      width: 37px;
+      height: 5px;
+      background-color: $white-color;
     }
   }
 
@@ -64,21 +76,25 @@
       content: "";
       position: absolute;
       top: 22px;
-      right: -1122px;
-      width: 1078px;
+      left: -8vw;
+      width: 100vw;
+      z-index: -1;
       height: 3px;
       background-color: $green-btn;
     }
+  }
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: -110px;
-      width: 70px;
-      height: 3px;
-      background-color: $green-btn;
-    }
+.checkbox__title-text {
+  background-color: $white-color;
+  padding-right: 26px;
+
+  @media (min-width: 400px) {
+    width: auto;
+  }
+
+  @media (min-width: $medium-width) {
+    padding-right: 38px;
   }
 }
 

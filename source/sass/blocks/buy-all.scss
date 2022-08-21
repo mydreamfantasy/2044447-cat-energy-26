@@ -21,7 +21,7 @@
     z-index: -2;
     background-size: cover;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina-resolution) {
       background-image: url("../img/catalog/cat-buy-all@2x.png");
     }
 

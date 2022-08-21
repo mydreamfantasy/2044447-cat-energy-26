@@ -8,8 +8,8 @@
   }
 
   @media (min-width: $medium-width) {
-    justify-content: space-between;
-    width: 630px;
+    justify-content: center;
+    gap: 277px;
     margin-left: auto;
     margin-right: auto;
     padding: 60px 0;
@@ -18,8 +18,9 @@
   @media (min-width: $large-width) {
     position: absolute;
     width: 421px;
-    padding: 56px 66px 56px 80px;
-    bottom: 257px;
+    gap: 70px;
+    padding: 59px 66px 60px 80px;
+    bottom: 252px;
     left: 109px;
     background-color: $white-color;
   }
