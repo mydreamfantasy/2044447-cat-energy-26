@@ -1,38 +1,69 @@
 .main-logo {
   display: flex;
   position: relative;
-  margin-top: 11px;
-  padding-bottom: 11.5px;
+  padding-bottom: 12.5px;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $medium-width) {
     display: flex;
     margin-top: 24px;
+    min-width: 175px;
   }
 
   @media (min-width: $large-width) {
     display: flex;
     margin-top: 54px;
+    min-width: 202px;
   }
 }
 
 .main-logo__icon {
   display: block;
   text-decoration: none;
+  padding-left: 20px;
+
+  @media (min-width: $medium-width) {
+    padding-left: 0;
+    padding-right: 12px;
+  }
 }
 
 .main-logo__icon-image {
-  padding-right: 55px;
+  @media (min-width: $medium-width) {
+    min-width: 61px;
+  }
+
+  @media (min-width: $large-width) {
+    min-width: 71px;
+  }
 }
 
 .main-logo__title {
   display: block;
   padding-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 53px;
 
   @media (min-width: $medium-width) {
-    display: none;
+    padding-top: 18px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-top: 21px;
   }
 }
 
 .main-logo__title-image {
-  // sometext
+  @media (min-width: $large-width) {
+    min-width: 118px;
+  }
 }

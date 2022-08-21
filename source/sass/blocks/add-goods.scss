@@ -2,7 +2,7 @@
   padding: 25px 0 19px;
 
   @media (min-width: $medium-width) {
-    padding: 80px 0 19px;
+    padding: 83px 0 19px;
     margin-bottom: 53px;
   }
 
@@ -21,7 +21,7 @@
 .add-goods__title {
   margin: 0;
   padding: 0;
-  padding-bottom: 51px;
+  padding-bottom: 49px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 24px;
@@ -35,9 +35,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: 16px;
-    right: -20px;
-    width: 53px;
+    top: 14px;
+    right: -5.5vw;
+    width: 80vw;
+    z-index: -1;
     height: 2px;
     background-color: $green-btn;
   }
@@ -45,7 +46,7 @@
   @media (min-width: $medium-width) {
     margin-left: auto;
     margin-right: auto;
-    width: 632px;
+    width: auto;
     padding-bottom: 108px;
     font-size: 36px;
     line-height: 1;
@@ -54,18 +55,8 @@
       content: "";
       position: absolute;
       top: 22px;
-      right: -68px;
-      width: 327px;
-      height: 3px;
-      background-color: $green-btn;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: -68px;
-      width: 31px;
+      right: -30px;
+      width: 100vw;
       height: 3px;
       background-color: $green-btn;
     }
@@ -79,21 +70,21 @@
       content: "";
       position: absolute;
       top: 22px;
-      right: -108px;
-      width: 954px;
+      right: -7.5vw;
+      width: 100vw;
       height: 3px;
       background-color: $green-btn;
     }
+  }
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: -110px;
-      width: 70px;
-      height: 3px;
-      background-color: $green-btn;
-    }
+.add-goods__title-text {
+  background-color: $white-color;
+  padding-right: 10px;
+
+  @media (min-width: $medium-width) {
+    padding-right: 38px;
+    padding-left: 38px;
   }
 }
 
@@ -278,6 +269,7 @@
 
 .add-goods__link {
   padding: 6px 0;
+  width: auto;
 
   @media (min-width: $medium-width) {
     width: 100%;

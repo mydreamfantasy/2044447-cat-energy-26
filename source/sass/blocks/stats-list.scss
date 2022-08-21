@@ -19,8 +19,9 @@
     width: 135px;
     height: 62px;
     top: -13px;
-    left: -22px;
+    left: -13px;
     background: no-repeat url("../img/example/frame.svg");
+    z-index: 1;
   }
 
   &:last-child::before {
@@ -62,7 +63,9 @@
   line-height: 1;
   font-weight: 400;
   color: $black-color;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
+  z-index: 2;
 
   @media (min-width: $medium-width) {
     padding-bottom: 12px;
@@ -80,6 +83,7 @@
   font-weight: 400;
   color: $grey-text;
   text-transform: lowercase;
+  z-index: 2;
 
   @media (min-width: $medium-width) {
     font-size: 14px;

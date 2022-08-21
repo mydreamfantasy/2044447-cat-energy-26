@@ -3,9 +3,13 @@
   gap: 13px;
   padding: 26px 0;
 
-  @media (min-width: $medium-width) {
+  @media (min-width: 372px) {
     justify-content: space-between;
-    width: 630px;
+  }
+
+  @media (min-width: $medium-width) {
+    justify-content: center;
+    gap: 277px;
     margin-left: auto;
     margin-right: auto;
     padding: 60px 0;
@@ -14,8 +18,9 @@
   @media (min-width: $large-width) {
     position: absolute;
     width: 421px;
-    padding: 56px 66px 56px 80px;
-    bottom: 257px;
+    gap: 70px;
+    padding: 59px 66px 60px 80px;
+    bottom: 252px;
     left: 109px;
     background-color: $white-color;
   }
@@ -56,6 +61,7 @@
 
 .collaboration__address-street {
   margin: 0;
+  margin-right: -13px;
   padding: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -66,6 +72,7 @@
 
   @media (min-width: $medium-width) {
     margin-top: -3px;
+    margin-right: 0;
     font-size: 16px;
     line-height: 20px;
     text-align: end;

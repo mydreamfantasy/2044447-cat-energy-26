@@ -6,41 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
-  <header class="main-header page-body__header-wrapper container-content">
-    <div class="main-logo">
-      <a class="main-logo__icon" href="index.html">
-        <img class="main-logo__icon-image" src="img/header/logo.svg" alt="Логотип компании Кэт энерджи." width="34"
-          height="38">
-      </a>
-      <a class="main-logo__title" href="index.html">
-        <img class="main-logo__title-image" src="img/header/logo-text.svg" alt="Надпись Cat energy." width="101"
-          height="18">
-      </a>
+  <header class="main-header ">
+    <div class="main-header__wrapper container-content--header">
+      <div class="main-logo">
+        <a class="main-logo__icon" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+            <img class="main-logo__icon-image" src="img/header/logo.svg" alt="Логотип компании Кэт энерджи." width="34"
+              height="38">
+          </picture>
+        </a>
+        <a class="main-logo__title" href="index.html">
+          <img class="main-logo__title-image" src="img/header/logo-text.svg" alt="Надпись Cat energy." width="101"
+            height="18">
+        </a>
+      </div>
+      <nav class="main-navigation main-nav--closed main-nav--nojs">
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-navigation__list reset-list">
+          <li class="main-navigation__item reset-item">
+            <a class="main-navigation__link main-navigation__link--inner" href="index.html">Главная</a>
+          </li>
+          <li class="main-navigation__item reset-item "><a
+              class="main-navigation__link main-navigation__link--active main-navigation__link--active--inner main-navigation__link--inner">Каталог
+              продукции</a>
+          </li>
+          <li class="main-navigation__item reset-item"><a class="main-navigation__link main-navigation__link--inner"
+              href="form.html">Подбор
+              программы</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-navigation main-nav--closed main-nav--nojs">
-      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-navigation__list reset-list">
-        <li class="main-navigation__item reset-item"><a class="main-navigation__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-navigation__item reset-item"><a
-            class="main-navigation__link  main-navigation__link--active">Каталог продукции</a></li>
-        <li class="main-navigation__item reset-item"><a class="main-navigation__link" href="form.html">Подбор
-            программы</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main class="catalog container-content">
-    <h1 class="catalog__title">Каталог продукции</h1>
-    <div class="catalog__list-wrapper">
-      <ul class="catalog__list reset-list container-content">
+  <main class="catalog">
+    <h1 class="catalog__title container-content--respons">Каталог продукции</h1>
+    <div class="catalog__list-wrapper container-content--respons">
+      <ul class="catalog__list reset-list ">
         <li class="catalog__item card-cart reset-item">
           <div class="card-cart__wrapper-img">
-            <img class="card-cart__image card-cart__image--small" src="img/catalog/energy-slim-chic-small.png"
-              alt="Продукт со вкусом курица маленький" height="86" width="68">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/energy-slim-chic-small-tablet.png 1x, img/catalog/energy-slim-chic-small-tablet@2x.png 2x">
+              <img class="card-cart__image card-cart__image--small" src="img/catalog/energy-slim-chic-small.png"
+                alt="Продукт со вкусом курица маленький" srcset="img/catalog/energy-slim-chic-small@2x.png 2x"
+                height="76" width="68">
+            </picture>
           </div>
           <div class="card-cart__wrapper">
             <h2 class="card-cart__title">Cat Energy
@@ -79,8 +98,13 @@
         </li>
         <li class="catalog__item card-cart reset-item">
           <div class="card-cart__wrapper-img">
-            <img class="card-cart__image" src="img/catalog/energy-slim-chic-big.png"
-              alt="Продукт со вкусом курица большой" height="100" width="84">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/energy-slim-chic-big-tablet.png 1x, img/catalog/energy-slim-chic-big-tablet@2x.png 2x">
+              <img class="card-cart__image" src="img/catalog/energy-slim-chic-big.png"
+                alt="Продукт со вкусом курица большой" srcset="img/catalog/energy-slim-chic-big@2x.png 2x" height="100"
+                width="84">
+            </picture>
           </div>
           <div class="card-cart__wrapper">
             <h2 class="card-cart__title">Cat Energy
@@ -119,8 +143,13 @@
         </li>
         <li class="catalog__item card-cart reset-item">
           <div class="card-cart__wrapper-img">
-            <img class="card-cart__image card-cart__image--small" src="img/catalog/energy-slim-fish-small.png"
-              alt="Продукт со вкусом рыба маленький" height="86" width="68">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/energy-slim-fish-small-tablet.png 1x, img/catalog/energy-slim-fish-small-tablet@2x.png 2x">
+              <img class="card-cart__image card-cart__image--small" src="img/catalog/energy-slim-fish-small.png"
+                alt="Продукт со вкусом рыба маленький" srcset="img/catalog/energy-slim-fish-small@2x.png 2x" height="76"
+                width="68">
+            </picture>
           </div>
           <div class="card-cart__wrapper">
             <h2 class="card-cart__title">Cat Energy
@@ -153,13 +182,19 @@
               </p>
             </div>
           </div>
+
           <a class="card-cart__link button" href="#">
             <span class="button__text card-cart__text-btn">Заказать</span></a>
         </li>
         <li class="catalog__item card-cart reset-item">
           <div class="card-cart__wrapper-img">
-            <img class="card-cart__image" src="img/catalog/energy-slim-fish-big.png"
-              alt="Продукт со вкусом рыба большой" height="100" width="84">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/energy-slim-fish-big-tablet.png 1x, img/catalog/energy-slim-fish-big-tablet@2x.png 2x">
+              <img class="card-cart__image" src="img/catalog/energy-slim-fish-big.png"
+                alt="Продукт со вкусом рыба большой" srcset="img/catalog/energy-slim-fish-big@2x.png 2x" height="100"
+                width="84">
+            </picture>
           </div>
           <div class="card-cart__wrapper">
             <h2 class="card-cart__title">Cat Energy
@@ -198,8 +233,13 @@
         </li>
         <li class="catalog__item card-cart reset-item">
           <div class="card-cart__wrapper-img">
-            <img class="card-cart__image card-cart__image--small" src="img/catalog/energy-slim-buck-small.png"
-              alt="Продукт со вкусом гречка маленький" height="86" width="68">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/energy-slim-buck-small-tablet.png 1x, img/catalog/energy-slim-buck-small-tablet@2x.png 2x">
+              <img class="card-cart__image card-cart__image--small" src="img/catalog/energy-slim-buck-small.png"
+                alt="Продукт со вкусом гречка маленький" srcset="img/catalog/energy-slim-buck-small@2x.png 2x"
+                height="76" width="68">
+            </picture>
           </div>
           <div class="card-cart__wrapper">
             <h2 class="card-cart__title">Cat Energy
@@ -238,8 +278,13 @@
         </li>
         <li class="catalog__item card-cart reset-item">
           <div class="card-cart__wrapper-img">
-            <img class="card-cart__image" src="img/catalog/energy-slim-buck-big.png"
-              alt="Продукт со вкусом гречка большой" height="100" width="84">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/energy-slim-buck-big-tablet.png 1x, img/catalog/energy-slim-buck-big-tablet@2x.png 2x">
+              <img class="card-cart__image" src="img/catalog/energy-slim-buck-big.png"
+                alt="Продукт со вкусом гречка большой" srcset="img/catalog/energy-slim-buck-big@2x.png 2x" height="100"
+                width="84">
+            </picture>
           </div>
           <div class="card-cart__wrapper">
             <h2 class="card-cart__title">Cat Energy
@@ -278,8 +323,12 @@
         </li>
         <li class="catalog__item card-cart reset-item">
           <div class="card-cart__wrapper-img">
-            <img class="card-cart__image card-cart__image--small" src="img/catalog/energy-slim-rice.png"
-              alt="Продукт со вкусом рис" height="84" width="72">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/energy-slim-rice-tablet.png 1x, img/catalog/energy-slim-rice-tablet@2x.png 2x">
+              <img class="card-cart__image card-cart__image--small" src="img/catalog/energy-slim-rice.png"
+                alt="Продукт со вкусом рис" srcset="img/catalog/energy-slim-rice@2x.png 2x" height="84" width="72">
+            </picture>
           </div>
           <div class="card-cart__wrapper">
             <h2 class="card-cart__title">Cat Energy
@@ -323,13 +372,15 @@
           <p class="card-cart__text">На самом деле вкусов
             гораздо больше!</p>
           <a class="card-cart__link button button--loadmore" href="#">
-            <span class="button__text button__text--loadmore">Показать еще</span></a>
+            <span class="button__text button__text--loadmore">Показать все</span></a>
         </li>
       </ul>
     </div>
 
-    <section class="add-goods container-content">
-      <h2 class="add-goods__title">Дополнительные товары</h2>
+    <section class="add-goods container-content container-content--respons">
+      <h2 class="add-goods__title">
+        <span class="add-goods__title-text">Дополнительные товары</span>
+      </h2>
       <div class="add-goods__wrapper">
         <ul class="add-goods__list reset-list">
           <li class="add-goods__item reset-item">
@@ -406,7 +457,7 @@
 
   <footer class="main-footer ">
     <div class="main-footer--inner-pages">
-      <section class="collaboration container-content">
+      <section class="collaboration container-content--respons">
         <h2 class="collaboration__title">Приглашаем <br>
           к сотрудничеству
           дилеров!
@@ -417,76 +468,74 @@
           <p class="collaboration__address-city">Санкт-Петербург</p>
         </address>
       </section>
-    </div>
-    <section class="map container">
-      <h2 class="visually-hidden">Где мы находимся</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660319396633!5m2!1sru!2sru"
-        width="320" height="361" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <img class="map__image" src="img/map.jpeg" alt="ул. Большая
-      Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="362">
-    </section>
-    <div class="main-footer__wrapper container">
-      <div class="main-footer__wrapper-content container-content">
-        <div class="main-footer__logo ">
-          <a class="main-footer__link" href="#">
-            <img class="main-footer__icon" src="img/header/logo-text.svg" alt="Надпись Cat energy" width="128"
-              height="24">
-          </a>
-        </div>
-        <div class="main-footer__social social">
-          <b class="visually-hidden">Давайте дружить!</b>
-          <ul class="social__list reset-list">
-            <li class="social__item reset-item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg class="footer_icon" aria-hidden="true" focusable="false" role="img" aria-label="Вконтакте."
-                  width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 2.34C0 1.48.52 1.02 1.55.96l3.97.02c.26 0 .44.13.53.38.4 1.26.86 2.34 1.37 3.25.5.92 1.17 1.97 1.99 3.16.07.15.18.23.34.23.13 0 .22-.06.3-.18l.07-.28.03-4.35c0-.3-.07-.5-.23-.6-.15-.1-.43-.18-.83-.23-.32-.05-.48-.23-.48-.55 0-.07 0-.12.02-.15C9.01.57 10.07.03 11.83.03l1.5-.03C14 0 14.55.16 15 .48c.44.32.67.82.67 1.5V7.7c.12.08.24.12.34.12.27 0 .5-.15.7-.45 1.95-2.58 3-4.31 3.17-5.18 0-.02.01-.06.05-.13.12-.25.33-.47.61-.65.29-.19.53-.31.75-.38a.55.55 0 0 1 .24-.05h4.13l.26.03c.36 0 .63.16.83.47.07.1.12.21.15.33a2.4 2.4 0 0 1 .06.55v.18a6.11 6.11 0 0 1-.94 2.2c-.5.78-1.15 1.62-1.93 2.53-.79.9-1.27 1.5-1.47 1.78-.16.2-.24.39-.24.56 0 .13.07.28.21.45l3.9 4.63c.2.26.31.56.31.88 0 .38-.16.7-.48.95-.32.25-.7.4-1.14.43l-.46.02h-4.04c-.02 0-.06 0-.11.02a.86.86 0 0 1-.1.01c-.4 0-.76-.16-1.1-.48-.12-.13-.96-1.12-2.5-2.97a1.39 1.39 0 0 0-.38-.32 38.47 38.47 0 0 0-.53 2.24l-.08.42a1.4 1.4 0 0 1-1.12 1.06l-.37.02h-2.61c-1.48 0-2.95-.63-4.41-1.9a19.3 19.3 0 0 1-3.96-4.95A47.51 47.51 0 0 1 .13 3.07 1.92 1.92 0 0 1 0 2.34Zm16.01 6.51c-.37 0-.7-.1-1.01-.29a.9.9 0 0 1-.45-.79V2c0-.34-.1-.58-.27-.72-.18-.14-.49-.21-.93-.21l-1.52.05c-.76 0-1.34.12-1.73.37.78.36 1.17.93 1.17 1.71v4.43a1.5 1.5 0 0 1-.53 1.04c-.32.28-.68.42-1.07.42-.53 0-.94-.24-1.22-.73a26.16 26.16 0 0 1-3.1-5.63l-.23-.66-3.55-.02c-.23 0-.36.01-.38.03-.03.03-.04.1-.04.22 0 .15.01.3.05.48l.56 1.4c1.49 3.64 3.11 6.51 4.86 8.6 1.75 2.1 3.47 3.15 5.16 3.15h2.66c.1 0 .19-.03.24-.09.05-.06.1-.17.13-.34l.06-.25.5-2.21c.15-.3.27-.5.38-.6.2-.2.42-.28.69-.28.43 0 .86.24 1.3.73l2.27 2.71c.14.22.3.33.45.33h4.4c.53 0 .8-.13.8-.38a.47.47 0 0 0-.08-.25l-3.87-4.55c-.3-.35-.45-.73-.45-1.13 0-.4.14-.8.43-1.16.23-.34.68-.9 1.34-1.67.67-.78 1.25-1.51 1.75-2.19.5-.68.82-1.3.98-1.85l.08-.33a.37.37 0 0 1-.02-.16c0-.07-.01-.14-.03-.19h-4.18c-.27.1-.48.25-.64.45L20.8 3c-.45 1.16-1.6 2.94-3.5 5.36-.36.33-.8.5-1.3.5Z"
-                    fill="#666" />
-                </svg>
-                <span class="visually-hidden">Мы в Вконтакте</span>
-              </a>
-            </li>
-            <li class="social__item reset-item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span
-                  class="visually-hidden">Мы в
-                  Ютубе</span>
-                <svg class="footer_icon" aria-hidden="true" focusable="false" role="img" aria-label="Ютуб." width="24"
-                  height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#a)">
+      <section class="map">
+        <h2 class="visually-hidden">Где мы находимся</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660319396633!5m2!1sru!2sru"
+          width="320" height="361" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <div class="main-footer__wrapper">
+        <div class="main-footer__wrapper-content container-content--respons">
+          <div class="main-footer__logo ">
+            <a class="main-footer__link" href="#">
+              <img class="main-footer__icon" src="img/header/logo-text.svg" alt="Надпись Cat energy" width="128"
+                height="24">
+            </a>
+          </div>
+          <div class="main-footer__social social">
+            <b class="visually-hidden">Давайте дружить!</b>
+            <ul class="social__list reset-list">
+              <li class="social__item reset-item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <svg class="social__icon" aria-hidden="true" focusable="false" role="img" aria-label="Вконтакте."
+                    width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="m15.85 8.8-5.24-3.5a.65.65 0 0 0-1.01.55v6.98a.65.65 0 0 0 1.01.54l5.24-3.49a.65.65 0 0 0 0-1.09Zm-4.94 2.8V7.08l3.4 2.27-3.4 2.27Zm12.48-8.56a2.4 2.4 0 0 0-1.45-1.63C18.22-.02 12.25 0 12 0S5.78-.02 2.06 1.4A2.4 2.4 0 0 0 .61 3.05 25.32 25.32 0 0 0 0 9.34c0 3.26.33 5.22.61 6.3a2.4 2.4 0 0 0 1.45 1.63c3.72 1.43 9.69 1.4 9.94 1.4h.08c.75 0 6.31-.04 9.86-1.4a2.4 2.4 0 0 0 1.45-1.64c.28-1.07.61-3.03.61-6.3 0-3.25-.33-5.22-.61-6.29Zm-1.27 12.27a1.1 1.1 0 0 1-.65.74c-3.5 1.34-9.4 1.32-9.47 1.32-.07 0-5.98.02-9.47-1.32a1.09 1.09 0 0 1-.65-.74c-.27-1-.57-2.85-.57-5.97 0-3.12.3-4.97.57-5.97a1.1 1.1 0 0 1 .65-.74C6.03 1.29 11.93 1.3 12 1.3c.07 0 5.98-.02 9.47 1.32a1.1 1.1 0 0 1 .65.74c.27 1 .57 2.85.57 5.97 0 3.12-.3 4.96-.57 5.97Z"
+                      d="M0 2.34C0 1.48.52 1.02 1.55.96l3.97.02c.26 0 .44.13.53.38.4 1.26.86 2.34 1.37 3.25.5.92 1.17 1.97 1.99 3.16.07.15.18.23.34.23.13 0 .22-.06.3-.18l.07-.28.03-4.35c0-.3-.07-.5-.23-.6-.15-.1-.43-.18-.83-.23-.32-.05-.48-.23-.48-.55 0-.07 0-.12.02-.15C9.01.57 10.07.03 11.83.03l1.5-.03C14 0 14.55.16 15 .48c.44.32.67.82.67 1.5V7.7c.12.08.24.12.34.12.27 0 .5-.15.7-.45 1.95-2.58 3-4.31 3.17-5.18 0-.02.01-.06.05-.13.12-.25.33-.47.61-.65.29-.19.53-.31.75-.38a.55.55 0 0 1 .24-.05h4.13l.26.03c.36 0 .63.16.83.47.07.1.12.21.15.33a2.4 2.4 0 0 1 .06.55v.18a6.11 6.11 0 0 1-.94 2.2c-.5.78-1.15 1.62-1.93 2.53-.79.9-1.27 1.5-1.47 1.78-.16.2-.24.39-.24.56 0 .13.07.28.21.45l3.9 4.63c.2.26.31.56.31.88 0 .38-.16.7-.48.95-.32.25-.7.4-1.14.43l-.46.02h-4.04c-.02 0-.06 0-.11.02a.86.86 0 0 1-.1.01c-.4 0-.76-.16-1.1-.48-.12-.13-.96-1.12-2.5-2.97a1.39 1.39 0 0 0-.38-.32 38.47 38.47 0 0 0-.53 2.24l-.08.42a1.4 1.4 0 0 1-1.12 1.06l-.37.02h-2.61c-1.48 0-2.95-.63-4.41-1.9a19.3 19.3 0 0 1-3.96-4.95A47.51 47.51 0 0 1 .13 3.07 1.92 1.92 0 0 1 0 2.34Zm16.01 6.51c-.37 0-.7-.1-1.01-.29a.9.9 0 0 1-.45-.79V2c0-.34-.1-.58-.27-.72-.18-.14-.49-.21-.93-.21l-1.52.05c-.76 0-1.34.12-1.73.37.78.36 1.17.93 1.17 1.71v4.43a1.5 1.5 0 0 1-.53 1.04c-.32.28-.68.42-1.07.42-.53 0-.94-.24-1.22-.73a26.16 26.16 0 0 1-3.1-5.63l-.23-.66-3.55-.02c-.23 0-.36.01-.38.03-.03.03-.04.1-.04.22 0 .15.01.3.05.48l.56 1.4c1.49 3.64 3.11 6.51 4.86 8.6 1.75 2.1 3.47 3.15 5.16 3.15h2.66c.1 0 .19-.03.24-.09.05-.06.1-.17.13-.34l.06-.25.5-2.21c.15-.3.27-.5.38-.6.2-.2.42-.28.69-.28.43 0 .86.24 1.3.73l2.27 2.71c.14.22.3.33.45.33h4.4c.53 0 .8-.13.8-.38a.47.47 0 0 0-.08-.25l-3.87-4.55c-.3-.35-.45-.73-.45-1.13 0-.4.14-.8.43-1.16.23-.34.68-.9 1.34-1.67.67-.78 1.25-1.51 1.75-2.19.5-.68.82-1.3.98-1.85l.08-.33a.37.37 0 0 1-.02-.16c0-.07-.01-.14-.03-.19h-4.18c-.27.1-.48.25-.64.45L20.8 3c-.45 1.16-1.6 2.94-3.5 5.36-.36.33-.8.5-1.3.5Z"
                       fill="#666" />
-                </svg></a>
-            </li>
-            <li class="social__item reset-item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <svg class="footer_icon" aria-hidden="true" focusable="false" role="img" aria-label="Телеграм."
-                  width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M19.46.15c.18.15.27.38.23.61l-2.63 15.76a.66.66 0 0 1-1.01.44l-7.88-5.25a.66.66 0 0 1-.15-.96l2.61-3.26-4.36 2.9a.66.66 0 0 1-.65.05L.36 7.8a.66.66 0 0 1 .08-1.2L18.82.03a.66.66 0 0 1 .64.11ZM2.33 7.32 5.86 9.1l7.56-5.04a.66.66 0 0 1 .88.96l-4.8 6 6.43 4.3 2.28-13.66L2.33 7.32Z"
-                    fill="#666" />
-                </svg><span class="visually-hidden">Мы в Телеграме</span>
-              </a>
-            </li>
-          </ul>
+                  </svg>
+                  <span class="visually-hidden">Мы в Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item reset-item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span
+                    class="visually-hidden">Мы в
+                    Ютубе</span>
+                  <svg class="social__icon" aria-hidden="true" focusable="false" role="img" aria-label="Ютуб."
+                    width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#a)">
+                      <path
+                        d="m15.85 8.8-5.24-3.5a.65.65 0 0 0-1.01.55v6.98a.65.65 0 0 0 1.01.54l5.24-3.49a.65.65 0 0 0 0-1.09Zm-4.94 2.8V7.08l3.4 2.27-3.4 2.27Zm12.48-8.56a2.4 2.4 0 0 0-1.45-1.63C18.22-.02 12.25 0 12 0S5.78-.02 2.06 1.4A2.4 2.4 0 0 0 .61 3.05 25.32 25.32 0 0 0 0 9.34c0 3.26.33 5.22.61 6.3a2.4 2.4 0 0 0 1.45 1.63c3.72 1.43 9.69 1.4 9.94 1.4h.08c.75 0 6.31-.04 9.86-1.4a2.4 2.4 0 0 0 1.45-1.64c.28-1.07.61-3.03.61-6.3 0-3.25-.33-5.22-.61-6.29Zm-1.27 12.27a1.1 1.1 0 0 1-.65.74c-3.5 1.34-9.4 1.32-9.47 1.32-.07 0-5.98.02-9.47-1.32a1.09 1.09 0 0 1-.65-.74c-.27-1-.57-2.85-.57-5.97 0-3.12.3-4.97.57-5.97a1.1 1.1 0 0 1 .65-.74C6.03 1.29 11.93 1.3 12 1.3c.07 0 5.98-.02 9.47 1.32a1.1 1.1 0 0 1 .65.74c.27 1 .57 2.85.57 5.97 0 3.12-.3 4.96-.57 5.97Z"
+                        fill="#666" />
+                  </svg></a>
+              </li>
+              <li class="social__item reset-item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <svg class="social__icon" aria-hidden="true" focusable="false" role="img" aria-label="Телеграм."
+                    width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M19.46.15c.18.15.27.38.23.61l-2.63 15.76a.66.66 0 0 1-1.01.44l-7.88-5.25a.66.66 0 0 1-.15-.96l2.61-3.26-4.36 2.9a.66.66 0 0 1-.65.05L.36 7.8a.66.66 0 0 1 .08-1.2L18.82.03a.66.66 0 0 1 .64.11ZM2.33 7.32 5.86 9.1l7.56-5.04a.66.66 0 0 1 .88.96l-4.8 6 6.43 4.3 2.28-13.66L2.33 7.32Z"
+                      fill="#666" />
+                  </svg><span class="visually-hidden">Мы в Телеграме</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="copyright__text">HTML Academy</span>
+              <svg class="copyright__icon" aria-hidden="true" focusable="false" role="img" aria-label="htmlacademy."
+                width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"
+                  fill="#666" />
+              </svg>
+              <span class="visually-hidden">HTML
+                Academy</span></a>
+          </div>
         </div>
-        <div class="main-footer__copyright copyright">
-          <p class="copyright__text">HTML Academy</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="htmlacademy-logo" aria-hidden="true" focusable="false" role="img" aria-label="htmlacademy."
-              width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"
-                fill="#666" />
-            </svg>
-            <span class="visually-hidden">HTML
-              Academy</span></a>
-        </div>
-      </div>
 
+      </div>
     </div>
   </footer>
 

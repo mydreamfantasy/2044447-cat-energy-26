@@ -10,13 +10,13 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  letter-spacing: -0.03em;
   color: $black-color;
 
   @media (min-width: $medium-width) {
     padding-bottom: 74px;
     font-size: 60px;
     line-height: 60px;
-    letter-spacing: -0.03em;
   }
 }
 
@@ -41,10 +41,26 @@
 
 .features__item {
   position: relative;
-  padding-bottom: 7px;
+  padding-bottom: 25px;
+
+  @media (min-width: 372px) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: 658px) {
+    padding-bottom: 70px;
+  }
 
   &:last-child {
     padding-bottom: 34px;
+
+    @media (min-width: 372px) {
+      padding-bottom: 50px;
+    }
+
+    @media (min-width: 658px) {
+      padding-bottom: 90px;
+    }
   }
 
   @media (min-width: $medium-width) {
@@ -72,7 +88,6 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 19px;
   padding-left: 80px;
   font-family: "Arial", sans-serif;
   font-size: 14px;

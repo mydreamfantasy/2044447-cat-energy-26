@@ -1,12 +1,6 @@
 .form {
-  @media (min-width: $medium-width) {
-    width: 630px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   @media (min-width: $large-width) {
-    width: 1220px;
+    padding-top: 187px;
   }
 }
 
@@ -19,6 +13,7 @@
 
 .form__title {
   margin: 0;
+  margin-left: -20px;
   padding: 27px 0 37px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -33,14 +28,20 @@
   @media (min-width: $medium-width) {
     padding-top: 0;
     padding-bottom: 54px;
+    margin-left: 38px;
     font-size: 60px;
     text-align: start;
+  }
+
+  @media (min-width: $large-width) {
+    margin-left: 0;
   }
 }
 
 .form__text {
   margin: 0;
   padding: 0;
+  padding-right: 10px;
   padding-bottom: 39px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -52,20 +53,32 @@
   box-sizing: border-box;
 
   @media (min-width: $medium-width) {
-    padding-right: 237px;
+    padding-right: 275px;
     padding-bottom: 66px;
+    margin-left: 38px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $large-width) {
     box-sizing: content-box;
+    margin-left: 0;
     width: 325px;
   }
 }
 
 .form__form {
-  // sometext
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $medium-width) {
+    width: 89%;
+  }
+
+  @media (min-width: $large-width) {
+    width: 100%;
+  }
 }
 
 .form__form-field {
@@ -133,10 +146,20 @@
   font-weight: 400;
   box-sizing: border-box;
   text-transform: uppercase;
+  border-radius: none;
 
   &::placeholder {
     color: #444444;
     opacity: 1;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $grey-text;
   }
 
   @media (min-width: $medium-width) {
@@ -144,6 +167,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.form-field__field-text--error {
+  border: 2px solid #ff8282;
 }
 
 .form-field__field-text--name {
@@ -184,7 +211,7 @@
 
 .form__remark {
   margin: 0;
-  padding: 18px 62px 32px;
+  padding: 18px 61px 32px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -195,7 +222,7 @@
 
   @media (min-width: $medium-width) {
     padding: 15px 64px 92px;
-    font-size: 19px;
+    font-size: 16px;
   }
 
   @media (min-width: $large-width) {

@@ -1,5 +1,18 @@
 .main-header {
+  @media (min-width: $large-width) {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+  }
+}
+
+.main-header__wrapper {
+  margin-top: 10px;
+
   @media (min-width: $medium-width) {
+    width: 92.5%;
     display: flex;
     justify-content: space-between;
   }

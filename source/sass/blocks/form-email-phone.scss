@@ -15,7 +15,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 35px;
+  padding-bottom: 33px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
@@ -27,11 +27,22 @@
   &::before {
     content: "";
     position: absolute;
-    top: 16px;
-    right: -20px;
-    width: 100px;
+    top: 14px;
+    left: -6.5vw;
+    width: 100vw;
+    z-index: -1;
     height: 2px;
     background-color: $green-btn;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -20px;
+    width: 20px;
+    height: 5px;
+    background-color: $white-color;
   }
 
   @media (min-width: $medium-width) {
@@ -43,8 +54,9 @@
       content: "";
       position: absolute;
       top: 22px;
-      right: -193px;
-      width: 145px;
+      left: -9.5vw;
+      width: 100vw;
+      z-index: -1;
       height: 3px;
       background-color: $green-btn;
     }
@@ -52,11 +64,11 @@
     &::after {
       content: "";
       position: absolute;
-      top: 22px;
-      left: -68px;
-      width: 31px;
-      height: 3px;
-      background-color: $green-btn;
+      top: 21px;
+      left: -37px;
+      width: 37px;
+      height: 5px;
+      background-color: $white-color;
     }
   }
 
@@ -65,21 +77,27 @@
       content: "";
       position: absolute;
       top: 22px;
-      right: -823px;
-      width: 776px;
+      left: -8vw;
+      width: 100vw;
+      z-index: -1;
       height: 3px;
       background-color: $green-btn;
     }
+  }
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: -110px;
-      width: 70px;
-      height: 3px;
-      background-color: $green-btn;
-    }
+.form-email-phone__title-text {
+  display: inline-block;
+  width: 191px;
+  background-color: $white-color;
+  padding-right: 10px;
+
+  @media (min-width: 400px) {
+    width: auto;
+  }
+
+  @media (min-width: $medium-width) {
+    padding-right: 38px;
   }
 }
 
@@ -128,24 +146,20 @@
   }
 }
 
-.form-email-phone__wrapper--email {
-  &::after {
-    top: 17px;
-    right: 14px;
-    width: 21px;
-    height: 16px;
-    background: url("../img/form/email.svg") no-repeat 0 0;
-  }
+.form-email-phone__field-icon {
+  position: absolute;
+  fill: none;
+  top: 18px;
+  right: 17px;
+  stroke: #222222;
 }
 
-.form-email-phone__wrapper--phone {
-  &::after {
-    top: 12px;
-    right: 4px;
-    width: 29px;
-    height: 21px;
-    background: url("../img/form/phone.svg") no-repeat 0 0;
-  }
+.form-email-phone__field-icon--phone {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  stroke: none;
+  fill: $black-color;
 }
 
 .form-email-phone__field-text {
@@ -155,6 +169,7 @@
   height: 46px;
   margin: 0;
   padding-left: 11px;
+  padding-right: 44px;
   border: 1px solid #e7e7e7;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -162,11 +177,29 @@
   font-weight: 400;
   box-sizing: border-box;
   text-transform: uppercase;
+  border-radius: none;
 
   &::placeholder {
     padding-right: 20px;
     color: #444444;
     opacity: 1;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $grey-text;
+  }
+
+  &:focus ~ .form-email-phone__field-icon {
+    stroke: $green-btn;
+  }
+
+  &:focus ~ .form-email-phone__field-icon--phone {
+    fill: $green-btn;
   }
 
   @media (min-width: $medium-width) {
@@ -177,6 +210,22 @@
   }
 }
 
+.form-email-phone__field-text--error-email {
+  border: 2px solid #ff8282;
+
+  & ~ .form-email-phone__field-icon {
+    stroke: #ff8282;
+  }
+}
+
+.form-email-phone__field-text--error-phone {
+  border: 2px solid #ff8282;
+
+  & ~ .form-email-phone__field-icon--phone {
+    fill: #ff8282;
+  }
+}
+
 .form-email-phone__wrapper-item {
   @media (min-width: $large-width) {
     display: grid;
@@ -184,27 +233,3 @@
     gap: 75px;
   }
 }
-
-// .form-email-phone__field-text--email {
-//   // width: 222px;
-// }
-
-// .form-email-phone__field-text--phone {
-//   // width: 200px;
-// }
-
-// .form-field__item {
-
-// }
-
-// .form-field__label {
-
-// }
-
-// .form-field__field-text {
-
-// }
-
-// .field-email-wrapper {
-
-// }
