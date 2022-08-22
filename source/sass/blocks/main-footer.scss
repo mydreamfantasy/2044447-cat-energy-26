@@ -5,7 +5,7 @@
 }
 
 .main-footer__wrapper {
-  background-color: #f2f2f2;
+  background-color: $loadmore-btn;
 }
 
 .main-footer__wrapper-content {
@@ -51,6 +51,6 @@
   // sometext
 }
 
-.main-footer--inner-pages {
-  background-color: #f2f2f2;
+.main-footer__inner-pages {
+  background-color: $loadmore-btn;
 }

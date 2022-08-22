@@ -158,7 +158,7 @@
   left: 0;
   width: 30px;
   height: 30px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $light-border;
 
   @media (min-width: $medium-width) {
     top: -5px;
@@ -169,7 +169,7 @@
 }
 
 .checkbox__control-input:hover + .checkbox__control-mark {
-  border-color: #bababa;
+  border-color: $light-hover-border;
 }
 
 .checkbox__control-add {
@@ -188,11 +188,5 @@
     padding-left: 14px;
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-.checkbox__wrapper {
-  @media (min-width: $medium-width) {
-    display: flex;
   }
 }

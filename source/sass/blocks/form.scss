@@ -139,7 +139,7 @@
   height: 46px;
   width: 100%;
   padding-left: 11px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $grey-line;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -149,12 +149,12 @@
   border-radius: none;
 
   &::placeholder {
-    color: #444444;
+    color: $grey-text;
     opacity: 1;
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: $light-border;
   }
 
   &:focus {
@@ -170,7 +170,7 @@
 }
 
 .form-field__field-text--error {
-  border: 2px solid #ff8282;
+  border: 2px solid $error;
 }
 
 .form-field__field-text--name {
@@ -187,6 +187,12 @@
 
 .form__check {
   // sometext
+}
+
+.form__wrapper {
+  @media (min-width: $medium-width) {
+    display: flex;
+  }
 }
 
 .form__button {
