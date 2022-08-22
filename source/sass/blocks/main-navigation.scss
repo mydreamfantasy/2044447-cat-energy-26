@@ -74,7 +74,7 @@
     height: 2px;
     background: $black-color;
     transform-origin: 50% 50%;
-    transform: rotate3d (0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
     transition: bottom 0.3s 0.3s, transform 0.3s;
   }
 
@@ -87,7 +87,7 @@
     top: 20px;
     background: $black-color;
     transform-origin: 50% 50%;
-    transform: rotate3d (0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
     transition: bottom 0.3s 0.3s, transform 0.3s;
   }
 }

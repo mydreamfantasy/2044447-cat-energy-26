@@ -169,6 +169,15 @@
   }
 }
 
+.form-field__field-text::-webkit-outer-spin-button,
+.form-field__field-text::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.form-field__field-text {
+  -moz-appearance: textfield;
+}
+
 .form-field__field-text--error {
   border: 2px solid $error;
 }
