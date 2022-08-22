@@ -146,12 +146,12 @@
   }
 }
 
-.form-email-phone__field-icon {
+.form-email-phone__field-icon--email {
   position: absolute;
   fill: none;
   top: 18px;
   right: 17px;
-  stroke: #222222;
+  stroke: $title-color;
 }
 
 .form-email-phone__field-icon--phone {
@@ -170,7 +170,7 @@
   margin: 0;
   padding-left: 11px;
   padding-right: 44px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $grey-line;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -181,12 +181,12 @@
 
   &::placeholder {
     padding-right: 20px;
-    color: #444444;
+    color: $grey-text;
     opacity: 1;
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: $light-border;
   }
 
   &:focus {
@@ -194,7 +194,7 @@
     border: 2px solid $grey-text;
   }
 
-  &:focus ~ .form-email-phone__field-icon {
+  &:focus ~ .form-email-phone__field-icon--email {
     stroke: $green-btn;
   }
 
@@ -211,18 +211,18 @@
 }
 
 .form-email-phone__field-text--error-email {
-  border: 2px solid #ff8282;
+  border: 2px solid $error;
 
-  & ~ .form-email-phone__field-icon {
-    stroke: #ff8282;
+  & ~ .form-email-phone__field-icon--email {
+    stroke: $error;
   }
 }
 
 .form-email-phone__field-text--error-phone {
-  border: 2px solid #ff8282;
+  border: 2px solid $error;
 
   & ~ .form-email-phone__field-icon--phone {
-    fill: #ff8282;
+    fill: $error;
   }
 }
 

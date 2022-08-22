@@ -114,7 +114,7 @@
       left: 0;
       width: 100%;
       height: 1px;
-      background-color: #e6e6e6;
+      background-color: $grey-line;
     }
 
     &::after {
@@ -124,7 +124,7 @@
       left: 0;
       width: 100%;
       height: 1px;
-      background-color: #e6e6e6;
+      background-color: $grey-line;
     }
   }
 
@@ -139,13 +139,13 @@
       left: -38px;
       width: 706px;
       height: 138px;
-      border: 1px solid #cdcdcd;
+      border: 1px solid $light-border;
       border-bottom: 0.5px;
       z-index: -1;
     }
 
     &:last-of-type::after {
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid $light-border;
     }
   }
 
@@ -164,7 +164,7 @@
       width: 100%;
       height: 1px;
       border: none;
-      background-color: #cdcdcd;
+      background-color: $light-border;
       z-index: -1;
     }
 
@@ -176,7 +176,7 @@
       width: 100%;
       height: 1px;
       border: none;
-      background-color: #cdcdcd;
+      background-color: $light-border;
       z-index: -1;
     }
   }
@@ -216,7 +216,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  color: #222222;
+  color: $title-color;
   text-transform: uppercase;
   box-sizing: border-box;
 
@@ -278,6 +278,13 @@
 
   @media (min-width: $large-width) {
     width: 244px;
+  }
+}
+
+.add-goods__text-btn {
+  @media (min-width: $medium-width) {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

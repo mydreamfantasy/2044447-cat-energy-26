@@ -12,7 +12,7 @@
       left: -31px;
       width: 100vw;
       height: 1px;
-      background-color: #e6e6e6;
+      background-color: $grey-line;
       z-index: -1;
     }
   }
@@ -197,12 +197,7 @@
   }
 
   &:active ~ .example__range-line {
-    background-color: #5eaa2f;
-  }
-
-  &:active ~ .example__range-button path {
-    background-color: #5eaa2f;
-    stroke: #5eaa2f;
+    background-color: $hover-btn;
   }
 }
 
@@ -211,7 +206,7 @@
   inset: 0;
   width: 0.2rem;
   height: 100%;
-  background-color: #666666;
+  background-color: $range-color;
   left: var(--position);
   transform: translateX(-50%);
   pointer-events: none;
@@ -231,7 +226,7 @@
   }
 
   &:active .slider-button-svg ~ path {
-    fill: #5eaa2f;
+    fill: $hover-btn;
   }
 }
 

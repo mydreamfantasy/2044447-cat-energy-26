@@ -23,7 +23,7 @@
       min-height: 196px;
       top: -30px;
       left: 0;
-      border: 1px solid #e7e7e7;
+      border: 1px solid $grey-line;
       z-index: -1;
     }
   }
@@ -84,7 +84,7 @@
   left: 0;
   width: 30px;
   height: 30px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $light-border;
   border-radius: 3px;
 
   @media (min-width: $medium-width) {
@@ -96,7 +96,7 @@
 }
 
 .radio-button__control-input:hover + .radio-button__control-mark {
-  border-color: #bababa;
+  border-color: $light-hover-border;
 }
 
 .radio-button__control-program {
@@ -106,7 +106,7 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  color: #222222;
+  color: $title-color;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   box-sizing: border-box;

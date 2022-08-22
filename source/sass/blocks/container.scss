@@ -41,7 +41,7 @@
 }
 
 .container--example {
-  background-color: #eaeaea;
+  background-color: $grey-line;
   position: relative;
 
   @media (min-width: $medium-width) {

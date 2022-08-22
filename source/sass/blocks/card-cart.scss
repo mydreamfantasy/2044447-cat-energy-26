@@ -16,7 +16,7 @@
       left: -36px;
       width: 324px;
       height: 430px;
-      background-color: #f2f2f2;
+      background-color: $loadmore-btn;
       z-index: -1;
     }
 
@@ -28,7 +28,7 @@
       width: 320px;
       height: 425px;
       z-index: -1;
-      border: 2px solid #f2f2f2;
+      border: 2px solid $loadmore-btn;
     }
   }
 
@@ -45,7 +45,7 @@
       left: -30px;
       width: 245px;
       height: 430px;
-      background-color: #f2f2f2;
+      background-color: $loadmore-btn;
       z-index: -1;
     }
 
@@ -57,7 +57,7 @@
       width: 243px;
       height: 425px;
       z-index: -1;
-      border: 2px solid #f2f2f2;
+      border: 2px solid $loadmore-btn;
     }
   }
 }
@@ -135,7 +135,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #222222;
+  color: $title-color;
   text-transform: uppercase;
   box-sizing: border-box;
 
@@ -186,7 +186,7 @@
       height: 1px;
       top: 24px;
       left: 0;
-      background-color: #cdcdcd;
+      background-color: $light-border;
     }
   }
 }
