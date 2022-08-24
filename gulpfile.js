@@ -10,7 +10,6 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import del from 'del';
-import svgstore from 'gulp-svgstore';
 import browser from 'browser-sync';
 
 
@@ -26,7 +25,7 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename('style.min.css'))
+    .pipe(rename('style.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -88,7 +87,7 @@ const copy = (done) => {
 }
 // Clean
 
-const clean = () => {
+export const clean = () => {
   return del('build');
 }
 // Server
