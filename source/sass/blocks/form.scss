@@ -173,20 +173,12 @@
   border: 2px solid $error;
 }
 
-.form-field__field-text--name {
-  // sometext
-}
-
 .form-field__field-text--weight {
-  // sometext
+  appearance: textfield;
 }
 
 .form-field__field-text--age {
-  // sometext
-}
-
-.form__check {
-  // sometext
+  appearance: textfield;
 }
 
 .form__wrapper {
@@ -209,10 +201,6 @@
   @media (min-width: $large-width) {
     width: 568px;
   }
-}
-
-.form__button-text {
-  // sometext
 }
 
 .form__remark {
