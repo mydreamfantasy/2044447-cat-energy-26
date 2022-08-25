@@ -107,6 +107,7 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  letter-spacing: -0.02em;
   border-radius: none;
   box-sizing: border-box;
 
@@ -116,6 +117,7 @@
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
+    opacity: 1;
     text-transform: uppercase;
     color: $grey-text;
   }
@@ -128,8 +130,6 @@
     line-height: 30px;
 
     &::placeholder {
-      padding-left: 18px;
-      padding-top: 8px;
       font-size: 20px;
       line-height: 30px;
     }
