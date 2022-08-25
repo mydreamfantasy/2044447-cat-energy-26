@@ -2,8 +2,6 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
-import csso from 'postcss-csso';
-import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
@@ -22,10 +20,8 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      autoprefixer(),
-      csso()
+      autoprefixer()
     ]))
-    .pipe(rename('style.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -87,7 +83,7 @@ const copy = (done) => {
 }
 // Clean
 
-export const clean = () => {
+const clean = () => {
   return del('build');
 }
 // Server
