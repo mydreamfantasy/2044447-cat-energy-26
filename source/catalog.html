@@ -11,11 +11,13 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
 </head>
 
 <body class="page-body">
   <header class="main-header ">
-    <div class="main-header__wrapper container-content--header">
+    <div class="main-header__wrapper container-content container-content--header">
       <div class="main-logo">
         <a class="main-logo__icon" href="index.html">
           <picture>
@@ -50,8 +52,8 @@
   </header>
 
   <main class="catalog">
-    <h1 class="catalog__title container-content--respons">Каталог продукции</h1>
-    <div class="catalog__list-wrapper container-content--respons">
+    <h1 class="catalog__title container-content container-content--respons">Каталог продукции</h1>
+    <div class="catalog__list-wrapper container-content container-content--respons">
       <ul class="catalog__list reset-list ">
         <li class="catalog__item card-cart reset-item">
           <div class="card-cart__wrapper-img">
@@ -368,8 +370,8 @@
             <span class="button__text card-cart__text-btn">Заказать</span></a>
         </li>
         <li class="catalog__item card-cart card-cart--loadmore reset-item">
-          <img class="card-cart--loadmore__image" src="img/catalog/load-more.svg" alt="Еще больше товаров." height="30"
-            width="30">
+          <img class="card-cart__image card-cart__image--loadmore" src="img/catalog/load-more.svg"
+            alt="Еще больше товаров." height="30" width="30">
           <h2 class="card-cart__title card-cart__title--loadmore">Показать еще 100500 товаров</h2>
           <p class="card-cart__text">На самом деле вкусов
             гораздо больше!</p>
@@ -459,7 +461,7 @@
 
   <footer class="main-footer ">
     <div class="main-footer__inner-pages">
-      <section class="collaboration container-content--respons">
+      <section class="collaboration container-content container-content--respons">
         <h2 class="collaboration__title">Приглашаем <br>
           к сотрудничеству
           дилеров!
@@ -478,7 +480,7 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
       <div class="main-footer__wrapper">
-        <div class="main-footer__wrapper-content container-content--respons">
+        <div class="main-footer__wrapper-content container-content container-content--respons">
           <div class="main-footer__logo ">
             <a class="main-footer__link" href="#">
               <img class="main-footer__icon" src="img/header/logo-text.svg" alt="Надпись Cat energy" width="128"

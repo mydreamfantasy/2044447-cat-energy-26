@@ -141,7 +141,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: $black-color;
   overflow: hidden;
@@ -191,7 +191,7 @@
 
   @media (min-width: $large-width) {
     display: inline-block;
-    padding: 69px 33px 88px 0;
+    padding: 69px 35px 88px 0;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
@@ -223,11 +223,12 @@
       position: absolute;
       width: 100%;
       height: 2px;
-      top: 37px;
+      top: 32px;
       left: 0;
       background-color: $green-btn;
 
       @media (min-width: $large-width) {
+        top: 37px;
         background-color: $white-color;
       }
     }

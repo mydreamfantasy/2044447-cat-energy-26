@@ -194,11 +194,11 @@
     border: 2px solid $grey-text;
   }
 
-  &:focus ~ .form-email-phone__field-icon--email {
+  &:focus ~ .form-email-phone__field-icon--email path {
     stroke: $green-btn;
   }
 
-  &:focus ~ .form-email-phone__field-icon--phone {
+  &:focus ~ .form-email-phone__field-icon--phone path {
     fill: $green-btn;
   }
 
@@ -213,7 +213,7 @@
 .form-email-phone__field-text--error-email {
   border: 2px solid $error;
 
-  & ~ .form-email-phone__field-icon--email {
+  & ~ .form-email-phone__field-icon--email path {
     stroke: $error;
   }
 }
@@ -221,7 +221,7 @@
 .form-email-phone__field-text--error-phone {
   border: 2px solid $error;
 
-  & ~ .form-email-phone__field-icon--phone {
+  & ~ .form-email-phone__field-icon--phone path {
     fill: $error;
   }
 }
