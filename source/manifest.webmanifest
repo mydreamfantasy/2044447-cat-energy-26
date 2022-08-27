@@ -1,5 +1,9 @@
 {
+  "name": "cat-energy",
+  "short_name": "cat-shop",
   "icons": [
     { "src": "img/favicon/512.png", "type": "image/png", "sizes": "512x512" }
   ]
 }
+
+

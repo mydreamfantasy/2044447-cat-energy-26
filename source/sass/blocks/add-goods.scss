@@ -2,7 +2,7 @@
   padding: 25px 0 19px;
 
   @media (min-width: $medium-width) {
-    padding: 83px 0 19px;
+    padding: 81px 0 19px;
     margin-bottom: 53px;
   }
 
@@ -60,6 +60,16 @@
       height: 3px;
       background-color: $green-btn;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: -40px;
+      width: 40px;
+      height: 7px;
+      background-color: $white-color;
+    }
   }
 
   @media (min-width: $large-width) {
@@ -84,7 +94,6 @@
 
   @media (min-width: $medium-width) {
     padding-right: 38px;
-    padding-left: 38px;
   }
 }
 
@@ -135,7 +144,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: -27px;
+      top: -28px;
       left: -38px;
       width: 706px;
       height: 138px;

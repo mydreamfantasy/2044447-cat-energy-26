@@ -4,17 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Каталог магазина спортпита для котиков">
   <title>Каталог</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
 </head>
 
 <body class="page-body">
   <header class="main-header ">
-    <div class="main-header__wrapper container-content--header">
+    <div class="main-header__wrapper container-content container-content--header">
       <div class="main-logo">
         <a class="main-logo__icon" href="index.html">
           <picture>
@@ -30,7 +33,8 @@
         </a>
       </div>
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-        <button class="main-navigation__toggle" type="button"><span class="main-navigation__toggle-btn"></span></button>
+        <button class="main-navigation__toggle" type="button" name="menu-button"><span
+            class="main-navigation__toggle-btn"></span></button>
         <ul class="main-navigation__list reset-list">
           <li class="main-navigation__item reset-item">
             <a class="main-navigation__link main-navigation__link--inner" href="index.html">Главная</a>
@@ -48,8 +52,8 @@
   </header>
 
   <main class="catalog">
-    <h1 class="catalog__title container-content--respons">Каталог продукции</h1>
-    <div class="catalog__list-wrapper container-content--respons">
+    <h1 class="catalog__title container-content container-content--respons">Каталог продукции</h1>
+    <div class="catalog__list-wrapper container-content container-content--respons">
       <ul class="catalog__list reset-list ">
         <li class="catalog__item card-cart reset-item">
           <div class="card-cart__wrapper-img">
@@ -366,8 +370,8 @@
             <span class="button__text card-cart__text-btn">Заказать</span></a>
         </li>
         <li class="catalog__item card-cart card-cart--loadmore reset-item">
-          <img class="card-cart--loadmore__image" src="img/catalog/load-more.svg" alt="Еще больше товаров." height="30"
-            width="30">
+          <img class="card-cart__image card-cart__image--loadmore" src="img/catalog/load-more.svg"
+            alt="Еще больше товаров." height="30" width="30">
           <h2 class="card-cart__title card-cart__title--loadmore">Показать еще 100500 товаров</h2>
           <p class="card-cart__text">На самом деле вкусов
             гораздо больше!</p>
@@ -457,7 +461,7 @@
 
   <footer class="main-footer ">
     <div class="main-footer__inner-pages">
-      <section class="collaboration container-content--respons">
+      <section class="collaboration container-content container-content--respons">
         <h2 class="collaboration__title">Приглашаем <br>
           к сотрудничеству
           дилеров!
@@ -470,13 +474,13 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Где мы находимся</h2>
-        <iframe
+        <iframe name="Карта местоположения офиса"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660319396633!5m2!1sru!2sru"
           width="320" height="361" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
       <div class="main-footer__wrapper">
-        <div class="main-footer__wrapper-content container-content--respons">
+        <div class="main-footer__wrapper-content container-content container-content--respons">
           <div class="main-footer__logo ">
             <a class="main-footer__link" href="#">
               <img class="main-footer__icon" src="img/header/logo-text.svg" alt="Надпись Cat energy" width="128"

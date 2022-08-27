@@ -63,6 +63,10 @@
 }
 
 .container-content--header {
+  width: auto;
+  margin: 0;
+  margin-top: 10px;
+
   @media (min-width: $medium-width) {
     width: $medium-width - 60px;
     margin: 0 auto;
