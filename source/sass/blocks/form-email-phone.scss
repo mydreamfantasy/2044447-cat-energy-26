@@ -136,11 +136,6 @@
   position: relative;
   flex-grow: 1;
 
-  &::after {
-    content: "";
-    position: absolute;
-  }
-
   @media (min-width: $medium-width) {
     padding-bottom: 20px;
   }
@@ -149,15 +144,15 @@
 .form-email-phone__field-icon--email {
   position: absolute;
   fill: none;
-  top: 18px;
-  right: 17px;
+  top: 17px;
+  right: 16px;
   stroke: $title-color;
 }
 
 .form-email-phone__field-icon--phone {
   position: absolute;
-  top: 15px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   stroke: none;
   fill: $black-color;
 }
@@ -194,11 +189,11 @@
     border: 2px solid $grey-text;
   }
 
-  &:focus ~ .form-email-phone__field-icon--email path {
+  &:focus ~ .form-email-phone__field-icon--email {
     stroke: $green-btn;
   }
 
-  &:focus ~ .form-email-phone__field-icon--phone path {
+  &:focus ~ .form-email-phone__field-icon--phone {
     fill: $green-btn;
   }
 
@@ -213,7 +208,7 @@
 .form-email-phone__field-text--error-email {
   border: 2px solid $error;
 
-  & ~ .form-email-phone__field-icon--email path {
+  & ~ .form-email-phone__field-icon--email {
     stroke: $error;
   }
 }
@@ -221,7 +216,7 @@
 .form-email-phone__field-text--error-phone {
   border: 2px solid $error;
 
-  & ~ .form-email-phone__field-icon--phone path {
+  & ~ .form-email-phone__field-icon--phone {
     fill: $error;
   }
 }

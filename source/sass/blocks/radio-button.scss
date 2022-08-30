@@ -99,6 +99,11 @@
   border-color: $light-hover-border;
 }
 
+.radio-button__control-input:focus + .radio-button__control-mark {
+  outline: none;
+  box-shadow: 0 0 10px $green-btn;
+}
+
 .radio-button__control-program {
   margin: 0;
   padding: 0;

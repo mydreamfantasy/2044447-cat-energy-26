@@ -5,8 +5,11 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
+import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
+import svgstore from 'gulp-svgstore';
 import svgo from 'gulp-svgmin';
+import cheerio from 'gulp-cheerio';
 import del from 'del';
 import browser from 'browser-sync';
 
@@ -48,7 +51,7 @@ const optimizeImages = () => {
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png,svg}')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'));
 }
 
@@ -64,11 +67,28 @@ const createWebp = () => {
 // SVG
 
 const svg = () => {
-  return gulp.src('source/img/**/*.svg')
+  return gulp.src(['source/img/**/*.svg', '!source/img/icon/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
 
+const sprite = () => {
+  return gulp.src('source/img/icon/*.svg')
+  .pipe(svgo())
+  .pipe(cheerio({
+    run: function ($) {
+      $('[fill]').removeAttr('fill');
+      $('[stroke]').removeAttr('stroke');
+      $('[style]').removeAttr('style');
+    },
+    parserOptions: { xmlMode: true }
+  }))
+  .pipe(svgstore({
+  inlineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
+  }
 // Copy
 
 const copy = (done) => {
@@ -120,6 +140,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
+    sprite,
     createWebp
   ),
 );
@@ -135,6 +156,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
+    sprite,
     createWebp
   ),
   gulp.series(
